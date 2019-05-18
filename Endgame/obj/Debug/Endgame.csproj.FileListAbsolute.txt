@@ -1,0 +1,7 @@
+C:\Users\mtorr\source\repos\Endgame\bin\Debug\Endgame.exe.config
+C:\Users\mtorr\source\repos\Endgame\bin\Debug\Endgame.exe
+C:\Users\mtorr\source\repos\Endgame\bin\Debug\Endgame.pdb
+C:\Users\mtorr\source\repos\Endgame\obj\Debug\Endgame.csprojAssemblyReference.cache
+C:\Users\mtorr\source\repos\Endgame\obj\Debug\Endgame.csproj.CoreCompileInputs.cache
+C:\Users\mtorr\source\repos\Endgame\obj\Debug\Endgame.exe
+C:\Users\mtorr\source\repos\Endgame\obj\Debug\Endgame.pdb
