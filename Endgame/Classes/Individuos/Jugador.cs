@@ -12,7 +12,9 @@ namespace Endgame.Classes.Individuos
     class Jugador:Personaje, IGemas
     {
         public static List<string> recorrido = new List<string>();
-        public static List<Item> inventorio = new List<Item>();
+        public static List<KeyItems> inventorio = new List<KeyItems>();
+        public static int vida = 40;
+        public static int contadorGemas = 0;
 
         CaracteresInvalidos ci;
 
@@ -34,8 +36,10 @@ namespace Endgame.Classes.Individuos
 
             while (checador == 1)
             {
+
                 Console.WriteLine("Ingresa un nombre para tu personaje, que no incluya números ni caracteres especiales.");
                 templete = Console.ReadLine();
+                Console.WriteLine();
 
                 if (ci.validarNombre(templete, funciona) == true)
                 {
@@ -43,30 +47,60 @@ namespace Endgame.Classes.Individuos
                     checador--;
                 }
             }
+
             Console.WriteLine("Entonces tu nombre es {0}", nombre); Console.ReadKey();
             Console.WriteLine();
 
             Console.WriteLine("Cuando el chasquido de Thanos sucedió hace 5 años, estuviste devastado de que ");
             Console.WriteLine("media humanidad desapareció, incluyendo a los héroes que admirabas y a tu familia. Es por esto que te");
-            Console.WriteLine("obsesionaste con la idea de que podías traerlos de vuelta. Habiendo casi perdido toda la");
+            Console.WriteLine("obsesionaste con la idea de que podías traer a todos de vuelta. Habiendo casi perdido toda la");
             Console.WriteLine("esperanza, de pronto te das cuenta de algo. "); Console.ReadKey(); Console.WriteLine();
 
             Console.WriteLine("Encontraste una vieja publicación científica hecha por el desaparecido doctor Hank Pym, ");
             Console.WriteLine("donde menciona que en el mundo cuántico existe la posibilidad de viajar en el tiempo."); Console.ReadKey();
 
-            Console.WriteLine("Fue entonces cuando tuviste la resolución de rastrear a los ");
-            Console.WriteLine("vengadores restantes para hacer un último intento de revertir todo antes de que todos se den por vencidos completamente."); Console.ReadKey();
+            Console.WriteLine("Fue entonces cuando tuviste la resolución de rastrear a los vengadores restantes ");
+            Console.WriteLine("para hacer un último intento de revertir las cosas antes de que todos se den por vencidos completamente."); Console.ReadKey(); Console.WriteLine();
 
-            Console.WriteLine("Es tu oportunidad para demostrar lo que puedes hacer por la humanidad. Si lo haces muy bien podrás lograr un resultado ideal.");
+            Console.WriteLine("Es tu oportunidad para demostrar lo que puedes hacer por la humanidad. Si lo haces bien podrás lograr un resultado ideal.");
             Console.WriteLine("Pero si te equivocas, el desenlace puede ser catastrófico."); Console.ReadKey(); Console.WriteLine();
         }
         public string Nombre { get => nombre; set => nombre = value; }
 
 
 
+
         public void usarGemas()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Con el poder de la creación y la destrucción a tu alcance, decides tomar las gemas del infinito."); Console.ReadKey();
+
+            inventorio.Add(new KeyItems("Gema del poder"));
+            contadorGemas++;
+            inventorio.Add(new KeyItems("Gema del espacio"));
+            contadorGemas++;
+            inventorio.Add(new KeyItems("Gema de la realidad"));
+            contadorGemas++;
+            inventorio.Add(new KeyItems("Gema del alma"));
+            contadorGemas++;
+            inventorio.Add(new KeyItems("Gema del tiempo"));
+            contadorGemas++;
+            inventorio.Add(new KeyItems("Gema de la mente"));
+            contadorGemas++;
+
+            Console.WriteLine("Mientras te pones el guante, estás asustado ya que sabes que te va a matar."); Console.ReadKey();
+            Console.WriteLine("Sin embargo, consideras que es algo que vale la pena, para salvar al universo"); Console.ReadKey();
+            Console.WriteLine("Tus últimas palabras son: \"Perdón hija, pues no podré verte una ultima vez. \"");
+            ganar();
+        }
+
+        public void ganar()
+        {
+            if(contadorGemas == 6)
+            {
+                Console.WriteLine("Ganaste.");
+                Console.WriteLine("Presiona una tecla para salir."); Console.ReadKey();
+                Environment.Exit(0);
+            }
         }
     }
 }

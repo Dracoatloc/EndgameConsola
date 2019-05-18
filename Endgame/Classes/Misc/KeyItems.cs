@@ -11,6 +11,11 @@ namespace Endgame.Classes.Misc
         protected string nombre = "";
         public string Nombre { get => nombre; set => nombre = value; }
 
+        public KeyItems(string n)
+        {
+            Nombre = n;
+        }
+
         public override bool desecharItem()
         {
             throw new NotImplementedException();

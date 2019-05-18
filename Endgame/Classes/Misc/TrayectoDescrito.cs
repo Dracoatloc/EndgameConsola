@@ -13,8 +13,15 @@ namespace Endgame.Classes.Misc
     {
         public static void registrarTrayecto(string lineas)
         {
-            File.WriteAllText(@"C:\Users\mtorr\source\repos\Endgame\RutaRecorrida.txt", lineas);
+            //File.WriteAllText(@"C:\Users\mtorr\source\repos\Endgame\RutaRecorrida.txt", lineas);
+            
+
+            TextWriter tsw = new StreamWriter(@"C:\Users\mtorr\source\repos\Endgame\RutaRecorrida.txt", true);
+            tsw.WriteLine(lineas);
+            tsw.Close();
+
             Jugador.recorrido.Add(lineas);
+
         }
     }
 }

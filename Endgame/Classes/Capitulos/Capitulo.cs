@@ -5,11 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 using Endgame.Classes.Misc;
 using Endgame.Classes.Individuos;
+using Endgame.Classes.Lugares;
 
 namespace Endgame.Classes.Capitulos
 {
     abstract class Capitulo
     {
-        public abstract void Correr(Jugador jugador);
+        public abstract void Correr(Jugador jugador, List<Heroe>heroes, List<LugarClave>lugares);
     }
 }

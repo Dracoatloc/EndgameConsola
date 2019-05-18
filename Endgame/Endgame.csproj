@@ -67,12 +67,15 @@
     <Compile Include="Classes\Individuos\Villano.cs" />
     <Compile Include="Classes\LecturaArchivos\CaracteresInvalidos.cs" />
     <Compile Include="Classes\LecturaArchivos\LeerArchivos.cs" />
+    <Compile Include="Classes\Lugares\Lugar.cs" />
+    <Compile Include="Classes\Lugares\LugarClave.cs" />
     <Compile Include="Classes\MasterControl.cs" />
     <Compile Include="Classes\Misc\Item.cs" />
     <Compile Include="Classes\Misc\KeyItems.cs" />
     <Compile Include="Classes\Misc\TrayectoDescrito.cs" />
     <Compile Include="Interfaces\IGemas.cs" />
     <Compile Include="Interfaces\IVengadores.cs" />
+    <Compile Include="Interfaces\IVidas.cs" />
     <Compile Include="Interfaces\IVillanos.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -81,6 +84,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Capitulo2.txt" />
     <Content Include="CaracteresEspeciales.txt" />
     <Content Include="Lugares.txt" />
     <Content Include="Personajes.txt" />
