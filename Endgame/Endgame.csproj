@@ -66,6 +66,7 @@
     <Compile Include="Classes\Individuos\Personaje.cs" />
     <Compile Include="Classes\Individuos\Villano.cs" />
     <Compile Include="Classes\LecturaArchivos\CaracteresInvalidos.cs" />
+    <Compile Include="Classes\LecturaArchivos\LeerArchHistoria.cs" />
     <Compile Include="Classes\LecturaArchivos\LeerArchivos.cs" />
     <Compile Include="Classes\Lugares\Lugar.cs" />
     <Compile Include="Classes\Lugares\LugarClave.cs" />
@@ -84,6 +85,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="C1Preguntas.txt" />
+    <Content Include="C2Preguntas.txt" />
+    <Content Include="Capitulo1.txt" />
     <Content Include="Capitulo2.txt" />
     <Content Include="CaracteresEspeciales.txt" />
     <Content Include="Lugares.txt" />

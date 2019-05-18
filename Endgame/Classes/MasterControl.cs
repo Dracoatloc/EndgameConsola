@@ -7,6 +7,7 @@ using Endgame.Classes;
 using Endgame.Classes.Capitulos;
 using Endgame.Classes.Individuos;
 using Endgame.Classes.Lugares;
+using Endgame.Classes.LecturaArchivos;
 
 namespace Endgame.Classes
 {
@@ -20,6 +21,8 @@ namespace Endgame.Classes
 
         CapituloUno capUno;
         CapituloDos capDos;
+
+        LeerArchHistoria lah;
 
         public MasterControl()
         {   
@@ -51,12 +54,17 @@ namespace Endgame.Classes
 
             capUno = new CapituloUno();
             capDos = new CapituloDos();
+
+            //lah = new LeerArchHistoria("C::\\Users\\mtorr\\source\\repos\\Endgame\\Capitulo2.txt");
         }
 
         public void Jugar()
         {
-            capUno.Correr(jugador, heroes, lugares);
             capDos.Correr(jugador, heroes, lugares);
+
+
+            capUno.Correr(jugador, heroes, lugares);
+            
         }
     }
 }
