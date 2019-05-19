@@ -10,7 +10,6 @@ namespace Endgame.Classes.LecturaArchivos
     class LeerArchHistoria : LeerArchivos
     {
         string[] archivoH;
-        string[] archivoP;
         public LeerArchHistoria(int i)
         {
             //@"C:\Users\mtorr\source\repos\Endgame\Capitulo2.txt"
@@ -22,6 +21,10 @@ namespace Endgame.Classes.LecturaArchivos
             else if(i == 2)
             {
                 archivoH = File.ReadAllLines(@"C:\Users\mtorr\source\repos\Endgame\Capitulo2.txt");
+            }
+            else if (i==3)
+            {
+                archivoH = File.ReadAllLines(@"C:\Users\mtorr\source\repos\Endgame\Finales.txt");
             }
             else
             {
