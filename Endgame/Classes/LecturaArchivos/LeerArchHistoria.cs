@@ -17,13 +17,11 @@ namespace Endgame.Classes.LecturaArchivos
             
             if(i == 1)
             {
-                archivoH = File.ReadAllLines(@h);
-                archivoP = File.ReadAllLines(p);
+                archivoH = File.ReadAllLines(@"C:\Users\mtorr\source\repos\Endgame\Capitulo1.txt");
             }
-            else if(i==2)
+            else if(i == 2)
             {
                 archivoH = File.ReadAllLines(@"C:\Users\mtorr\source\repos\Endgame\Capitulo2.txt");
-                archivoP = File.ReadAllLines(@"C:\Users\mtorr\source\repos\Endgame\C2Preguntas.txt");
             }
             else
             {
@@ -32,14 +30,26 @@ namespace Endgame.Classes.LecturaArchivos
 
         }
 
-        public void LeerHistoria(int x, int y)
+        public void LeerHistoria(int x, int y, int z)
         {
             try
             {
-                Console.WriteLine();
-                for (int i = x; i <= y; i++)
+                if(z==0)
                 {
-                    Console.WriteLine(archivoH[i]); Console.ReadKey();
+                    Console.WriteLine();
+                    for (int i = x; i <= y; i++)
+                    {
+                        Console.WriteLine(archivoH[i]); Console.ReadKey();
+                    }
+                    Console.WriteLine();
+                }
+                else
+                {
+                    Console.WriteLine();
+                    for (int i = x; i <= y; i++)
+                    {
+                        Console.WriteLine(archivoH[i]);
+                    }
                 }
             }
             catch (Exception)
@@ -49,23 +59,30 @@ namespace Endgame.Classes.LecturaArchivos
             }
             
         }
-
-        public void LeerPregunta(int x)
+        
+        public void errorHistoria()
         {
-            string templete = "";
             Console.WriteLine();
-            try
-            {
-                Console.WriteLine(archivoP[x]);
-                templete = Console.ReadLine();
-            }
-            catch
-            {
-                Console.WriteLine("Fuera de índice; ERROR"); Console.ReadKey();
-                Environment.Exit(0);
-            }
-
+            Console.Write("Opción inválida. Vuelve a intentar."); Console.ReadKey(); Console.WriteLine();
+            Console.Write("Recuerda escribir la opción tal cual como viene."); Console.ReadKey(); Console.WriteLine(); Console.WriteLine();
         }
+
+        //public void LeerPregunta(int x)
+        //{
+        //    string templete = "";
+        //    Console.WriteLine();
+        //    try
+        //    {
+        //        Console.WriteLine(archivoP[x]);
+        //        templete = Console.ReadLine();
+        //    }
+        //    catch
+        //    {
+        //        Console.WriteLine("Fuera de índice; ERROR"); Console.ReadKey();
+        //        Environment.Exit(0);
+        //    }
+
+        //}
 
 
         //public void Leer(int x, int y)

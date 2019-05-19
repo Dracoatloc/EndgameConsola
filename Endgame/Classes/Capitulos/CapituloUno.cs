@@ -7,6 +7,7 @@ using Endgame.Classes.Misc;
 using Endgame.Classes.Capitulos;
 using Endgame.Classes.Individuos;
 using Endgame.Classes.Lugares;
+using Endgame.Classes.LecturaArchivos;
 
 namespace Endgame.Classes.Capitulos
 {
@@ -16,24 +17,23 @@ namespace Endgame.Classes.Capitulos
         int contador = 0;
         int subcontador = 0;
         List<LugarClave> lugaresl;
+        LeerArchHistoria lah;
 
-        public override void Correr(Jugador jugador, List<Heroe>heroes, List<LugarClave> lugares)
+        public override void Correr(Jugador jugador, List<Heroe>heroes, List<LugarClave> lugares, LeerArchHistoria lah1)
         {
             lugaresl = lugares;
+            lah = lah1;
 
-            Console.WriteLine();
-            Console.WriteLine("----- CAPITULO 1: REFORMACION -----"); Console.WriteLine();
+            lah.LeerHistoria(0 ,0 ,0);
+            Console.WriteLine(lugares[0].Nombre);
+            Console.WriteLine(lugares[0].describirLugar());
 
-            Console.WriteLine("Después del chasquido de Thanos, has pasado los últimos 5 años obsesionado con la muerte de la mitad");
-            Console.WriteLine("de la humanidad y has descubierto la manera de devolverlos a la vida, pero necesitas la ayuda de Los ");
-            Console.WriteLine("Vengadores que sobrevivieron. "); Console.ReadKey(); Console.WriteLine();
-
-            Console.WriteLine("Has trabajado mucho a lo largo de la última semana, sin tener ningún resultado y necesitas hacer algo para distraerte. "); Console.WriteLine();
+            lah.LeerHistoria(1 ,4 ,0);
 
             while (contador < 1)
-            {          
-                Console.WriteLine("--> ¿Qué haces?      Opciones: (1) Salir por un paseo    (2) Ir a una reunion de sobrevivientes    (3) Tomar el papel cientifico");
-                Console.WriteLine("OJO: NO PONGAS ACENTOS, PARENTESIS, NI NUMEROS CON TEXTO");
+            {
+
+                lah.LeerHistoria(6 ,7 ,1);
                 eleccion = Console.ReadLine();
 
                 if (eleccion == "Salir por un paseo" || eleccion == "1")
@@ -54,15 +54,15 @@ namespace Endgame.Classes.Capitulos
                     if(subcontador == 0)
                     {
                         TrayectoDescrito.registrarTrayecto("Tomas el papel científico");
-                        Console.WriteLine();
-                        Console.WriteLine("Tomas el papel con el descubrimiento que hiciste relacionado al mundo cuántico, ");
-                        Console.WriteLine("para que puedas reflexionarlo."); Console.ReadKey();
+
+                        lah.LeerHistoria(9 ,9 ,0);
 
                         Jugador.inventorio.Add(new KeyItems("Papel Científico"));
 
                         Console.WriteLine();
                         Console.WriteLine("Conseguiste un {0}!", Jugador.inventorio[0].Nombre);
                         Console.WriteLine();
+
                         subcontador = 1;
                         continue;
                     }
@@ -80,30 +80,26 @@ namespace Endgame.Classes.Capitulos
                     continue;
                 }            
             }
+
             eleccion = "";
             subcontador = 0;
 
             if (contador == 1)
             {
-                Console.WriteLine();
-                Console.WriteLine("Mientras vas por las calles de la ciudad, te encuentras con un hombre que está visiblemente desorientado. ");
-                Console.WriteLine("Te acercas a él para asistirlo y te das cuenta de que no sabe nada de la situación por la que está pasando el mundo.");
-                Console.WriteLine("Tú le empiezas a explicar todo lo que hicieron Thanos y Los Vengadores y el hombre se desconcierta todavía más."); Console.ReadKey(); Console.WriteLine();
-                Console.WriteLine("Tú no puedes llegar a una conclusión de por qué él no sabe de todo lo que pasó y le preguntas dónde estuvo todo este tiempo.");
-                Console.WriteLine("El hombre contesta que es algo muy complicado y necesitas tener conocimientos científicos avanzados."); Console.ReadKey(); Console.WriteLine();
+
+                lah.LeerHistoria(11, 15, 0);
 
                 while (subcontador < 1)
                 {
-                    Console.WriteLine("--> ¿Qué haces?      Opciones: (1) Hacer nada    (2) Mostrarle el papel");
+
+                    lah.LeerHistoria(17 ,17 ,1);
                     eleccion = Console.ReadLine();
                     
 
                     if (eleccion == "Nada" || eleccion =="1")
                     {
                         TrayectoDescrito.registrarTrayecto("Haces nada.");
-                        Console.WriteLine("EL hombre te agradece por haberle explicado lo que pasó con el mundo y se va. "); Console.ReadKey();
-                        Console.WriteLine("Nunca lo vuelves a encontrar."); Console.ReadKey();
-
+                        lah.LeerHistoria(19, 20, 0);
                         Environment.Exit(0);
                     }
 
@@ -114,23 +110,14 @@ namespace Endgame.Classes.Capitulos
                         {
                             if (Jugador.inventorio[0].Nombre == "Papel Científico")
                             {
-                                Console.WriteLine();
-                                Console.WriteLine("Entonces, tu le dices que eres científico, y además le muestras la investigación que encontraste. ");
-                                Console.WriteLine("Para tu suerte, resulta que el hombre es {0} es justo el tema del que estás haciendo tu investigación, ", heroes[0].Nombre); 
-                                Console.WriteLine("y la información que él conoce podría ayudarte a seguir avanzando."); Console.ReadKey(); Console.WriteLine();
-
-                                Console.WriteLine("Le comentas que estás haciendo esa investigación y mientras le estás platicando, le surge una idea.");
-                                Console.WriteLine("Para llevar a cabo esa idea necesita ir con Los Vengadores,");
-                                Console.WriteLine("pero también te necesita a ti y a tus conocimientos, por lo que decide llevarte con él a buscarlos.");
-                                Console.ReadKey();
+                                lah.LeerHistoria(26, 28, 0);
 
                                 subcontador++;
                                 continue;
                             }
                             else
                             {
-                                Console.WriteLine();
-                                Console.WriteLine("No traes el papel!"); Console.ReadKey();
+                                Console.WriteLine("No traes el papel!");
                                 continue;
                             }
                         }
@@ -152,22 +139,18 @@ namespace Endgame.Classes.Capitulos
             }
             else if(contador == 2)
             {
-                Console.WriteLine();
-                Console.WriteLine("Estás en la reunión de sobrevivientes. Hay 5 sobrevivientes más y el host de la reunión. Estás tan estresado por tu investigación que no te puedes concentrarte en lo que dicen las demás personas en la reunión. Cuando llega tu turno de hablar, decides platicarles a todos sobre tu trabajo, para intentar desahogarte y tranquilizarte. ");
-
+                lah.LeerHistoria(30, 30, 0);
+                
                 while (subcontador < 1)
                 {
-                    Console.WriteLine("--> ¿Qué haces?      Opciones: (1) Hacer nada    (2) Hablar sobre el papel");
+                    lah.LeerHistoria(32, 32, 1);
                     eleccion = Console.ReadLine();
-
 
                     if (eleccion == "Nada" || eleccion == "1")
                     {
                         TrayectoDescrito.registrarTrayecto("Haces nada.");
-                        Console.WriteLine();
-                        Console.WriteLine("La gente se te queda viendo, mientras tu los observas con miedo. El host te agradece por venir, y reconoce que es difícil expresarse bien desde la catástrofe"); Console.ReadKey();
-                        Console.WriteLine("Pasa la reunión y se van todos. Lástima que era la reunión final de este grupo, por lo que ya no los verás jamás. "); Console.ReadKey();
-
+                        lah.LeerHistoria(34, 35, 0);
+                        
                         Environment.Exit(0);
                     }
 
@@ -178,12 +161,7 @@ namespace Endgame.Classes.Capitulos
                         {
                             if (Jugador.inventorio[0].Nombre == "Papel Científico")
                             {
-                                Console.WriteLine();
-                                Console.WriteLine("Cuando llega tu turno de hablar, decides platicarles a todos sobre tu trabajo, para intentar desahogarte y tranquilizarte. ");
-                                Console.WriteLine("Les cuentas a todos sobre la idea que tienes de intentar viajar al pasado para traer a todos los demás que desaparecieron. Nadie te toma en serio, e incluso se algunos se burlan y te dicen que es una idea tonta y sin sentido. Te empiezas a dar por vencido con la idea, y eso te ayuda a relajarte. "); Console.ReadKey();
-                                Console.WriteLine("Al final de la reunión, el host se acerca a ti y te pregunta sobre tu idea, porque le parece interesante. Te dice que quiere que lo acompañes, para enseñarte algo. Tu le dices que sí para aprovechar la oportunidad de no trabajar y relajarte. Nunca te habías puesto a observar a la gente que iba, entonces no conocías a nadie, pero en el camino te das cuenta de que la cara te parece conocida. Luego de pensar un rato, te das cuenta de que es el {0}.", heroes[1].Nombre);
-                                Console.ReadKey();
-
+                                lah.LeerHistoria(37, 39, 0);
                                 subcontador++;
                                 continue;
                             }
@@ -209,14 +187,7 @@ namespace Endgame.Classes.Capitulos
                         continue;
                     }
                 }
-
-                Console.ReadKey();
             }
-
-
-
-
-
 
             eleccion = "";
             contador = 0;
@@ -226,19 +197,15 @@ namespace Endgame.Classes.Capitulos
             bool eleccion3 = false;
             bool eleccion4 = false;
 
+            lah.LeerHistoria(41, 41, 0);
 
-
-
-
-            Console.WriteLine("");
-            Console.WriteLine("Llegando a los nuevos cuarteles de Los Vengadores, empiezas a platicar tu idea a {2} en compañía de {0} y {1}. A los todos les parece interesante y deciden ir todos a buscar a Los Vengadores restantes para empezar a trabajar. Tú, {1}, {0} y {2} empiezan su travesía por intentar volver a juntar a Los Vengadores.", heroes[0].Nombre, heroes[1].Nombre, heroes[2].Nombre);
-
+            ////////////////////////////
 
             while (contador < 4)
             {
                 if (Jugador.inventorio.Count() == 2)
                 {
-                    Console.WriteLine("--> ¿A quién buscarán ?      Opciones: (1) {0} en Nueva York     (2) {1} en su casa de campo     (3) {2} en Nuevo Asgard     (4) {3} en Japon", heroes[4].Nombre, heroes[3].Nombre, heroes[5].Nombre, heroes[6].Nombre);
+                    lah.LeerHistoria(43, 43, 1);
                     eleccion = Console.ReadLine();
 
                     if (eleccion == "Hulk en Nueva York" || eleccion == "1")
@@ -268,6 +235,8 @@ namespace Endgame.Classes.Capitulos
                             Console.WriteLine();
                             Console.WriteLine("El equipo llega a la casa de campo de Iron Man y también le platican la idea. Iron Man duda un poco el tener que dejar la familia que tiene y teme perderla, pero al final decide ayudarlos. Antes de volver a los cuarteles, te llama para darte uno de sus dispositivos. Ahora tienes un rastreador para encontrar a dos de Los Vengadores restantes."); Console.ReadKey();
                             Jugador.inventorio.Add(new KeyItems("Rastreador"));
+
+                            Console.WriteLine();
                             Console.WriteLine("Conseguiste un {0}", Jugador.inventorio[1].Nombre);
                             eleccion2 = true;
 
@@ -473,7 +442,7 @@ namespace Endgame.Classes.Capitulos
 
             while(contador < 1)
             {
-                Console.WriteLine("--> ¿A quién le preguntas?      Opciones: (1) Prepararse para el mundo Cuántico    (2) Ir al laboratorio del doctor Pym");
+                Console.WriteLine("--> ¿Qué haces?      Opciones: (1) Prepararse para el mundo Cuántico    (2) Ir al laboratorio del doctor Pym");
                 eleccion = Console.ReadLine();
                 if(eleccion == "Prepararse para el mundo Cuántico" || eleccion == "1")
                 {
@@ -500,7 +469,9 @@ namespace Endgame.Classes.Capitulos
                         Jugador.inventorio.Add(new KeyItems("Partículas Pym"));
                         Jugador.inventorio.Add(new KeyItems("Partículas Pym"));
 
+                        Console.WriteLine();
                         Console.WriteLine("Conseguiste 3 {0}", Jugador.inventorio[2].Nombre); Console.ReadKey();
+                        eleccion2 = true;
                         continue;
                     }
                     else
@@ -509,8 +480,15 @@ namespace Endgame.Classes.Capitulos
                         Console.WriteLine("Ya escogiste esta opción. "); Console.ReadKey();
                         continue;
                     }      
+                   
                 }
-
+                else
+                {
+                    Console.WriteLine();
+                    Console.Write("Opción inválida. Vuelve a intentar."); Console.ReadKey(); Console.WriteLine();
+                    Console.Write("Recuerda escribir la opción tal cual como viene."); Console.ReadKey(); Console.WriteLine(); Console.WriteLine();
+                    continue;
+                }
             }
             Console.WriteLine();
             Console.WriteLine("Ya tienes las Partículas, ahora solo falta que te prepares todo el equipo."); Console.ReadKey();

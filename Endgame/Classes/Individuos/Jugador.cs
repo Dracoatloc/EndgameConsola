@@ -13,6 +13,7 @@ namespace Endgame.Classes.Individuos
     {
         public static List<string> recorrido = new List<string>();
         public static List<KeyItems> inventorio = new List<KeyItems>();
+        public static List<KeyItems> gemas = new List<KeyItems>();
         public static int vida = 40;
         public static int contadorGemas = 0;
 

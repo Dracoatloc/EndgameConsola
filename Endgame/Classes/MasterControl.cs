@@ -17,12 +17,12 @@ namespace Endgame.Classes
         public static List<Heroe> heroes;
         //public static Villano villano;
         public static List<LugarClave> lugares;
-        
 
         CapituloUno capUno;
         CapituloDos capDos;
 
-        LeerArchHistoria lah;
+        public LeerArchHistoria lah1;
+        public LeerArchHistoria lah2;
 
         public MasterControl()
         {   
@@ -43,28 +43,25 @@ namespace Endgame.Classes
 
             //villano = new Villano("Thanos");
 
-            lugares.Add(new LugarClave("Ciudad de Nueva York", " año 2018"));
-            lugares.Add(new LugarClave("Nuevos Cuarteles de los Vengadores", " año 2018"));
-            lugares.Add(new LugarClave("Reino Cuántico", " año 2018"));
-            lugares.Add(new LugarClave("Viudad de Nueva York", " año 2012"));
-            lugares.Add(new LugarClave("Asgard", " año 2013"));
-            lugares.Add(new LugarClave("Morag", " año 2014"));
-            lugares.Add(new LugarClave("Vormir", " año 2014"));
-
+            lugares.Add(new LugarClave("Ciudad de Nueva York", "del año 2018"));
+            lugares.Add(new LugarClave("Nuevos Cuarteles de los Vengadores", "del año 2018"));
+            lugares.Add(new LugarClave("Reino Cuántico", "del año 2018"));
+            lugares.Add(new LugarClave("Viudad de Nueva York", "del año 2012"));
+            lugares.Add(new LugarClave("Asgard", "del año 2013"));
+            lugares.Add(new LugarClave("Morag", "del año 2014"));
+            lugares.Add(new LugarClave("Vormir", "del año 2014"));
 
             capUno = new CapituloUno();
             capDos = new CapituloDos();
 
-            //lah = new LeerArchHistoria("C::\\Users\\mtorr\\source\\repos\\Endgame\\Capitulo2.txt");
+            lah1 = new LeerArchHistoria(1);
+            lah2 = new LeerArchHistoria(2);
         }
 
         public void Jugar()
         {
-            capDos.Correr(jugador, heroes, lugares);
-
-
-            capUno.Correr(jugador, heroes, lugares);
-            
+            capUno.Correr(jugador, heroes, lugares, lah1);
+            capDos.Correr(jugador, heroes, lugares, lah2);
         }
     }
 }

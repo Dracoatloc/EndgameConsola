@@ -85,8 +85,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="C1Preguntas.txt" />
-    <Content Include="C2Preguntas.txt" />
     <Content Include="Capitulo1.txt" />
     <Content Include="Capitulo2.txt" />
     <Content Include="CaracteresEspeciales.txt" />

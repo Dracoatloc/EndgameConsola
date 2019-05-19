@@ -9,5 +9,6 @@ namespace Endgame.Interfaces
     interface IVidas
     {
         void perderVida();
+        //a personaje y villano
     }
 }

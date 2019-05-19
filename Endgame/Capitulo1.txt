@@ -1,1 +1,44 @@
-﻿
+﻿----- CAPITULO 1: REFORMACION -----
+Después del chasquido de Thanos, has pasado los últimos 5 años obsesionado con la muerte de la mitad
+de la humanidad y has descubierto la manera de devolverlos a la vida, pero necesitas la ayuda de Los
+Vengadores que sobrevivieron.
+Has trabajado mucho a lo largo de la última semana, sin tener ningún resultado y necesitas hacer algo para distraerte.
+
+--> ¿Qué haces?     (1) Salir por un paseo    (2) Ir a una reunion de sobrevivientes    (3) Tomar el papel cientifico"
+OJO: NO PONGAS ACENTOS, PARENTESIS, NI NUMEROS CON TEXTO
+
+Tomas el papel con el descubrimiento que hiciste relacionado al mundo cuántico para que puedas reflexionarlo.
+
+Mientras vas por las calles de la ciudad, te encuentras con un hombre que está visiblemente desorientado.
+Te acercas a él para asistirlo y te das cuenta de que no sabe nada de la situación por la que está pasando el mundo.
+Tú le empiezas a explicar todo lo que hicieron Thanos y Los Vengadores y el hombre se desconcierta todavía más.
+Tú no puedes llegar a una conclusión de por qué él no sabe de todo lo que pasó y le preguntas dónde estuvo todo este tiempo.
+El hombre contesta que es algo muy complicado y necesitas tener conocimientos científicos avanzados.
+
+--> ¿Qué haces?      (1) Hacer nada    (2) Mostrarle el papel
+
+EL hombre te agradece por haberle explicado lo que pasó con el mundo y se va. 
+Nunca lo vuelves a encontrar.
+
+Entonces, tu le dices que eres científico, y además le muestras la investigación que encontraste. ");
+Para tu suerte, resulta que el hombre es {0} es justo el tema del que estás haciendo tu investigación, ", heroes[0].Nombre
+y la información que él conoce podría ayudarte a seguir avanzando.
+
+Le comentas que estás haciendo esa investigación y mientras le estás platicando, le surge una idea.
+Para llevar a cabo esa idea necesita ir con Los Vengadores,
+pero también te necesita a ti y a tus conocimientos, por lo que decide llevarte con él a buscarlos.
+
+Estás en la reunión de sobrevivientes. Hay 5 sobrevivientes más y el host de la reunión. Estás tan estresado por tu investigación que no te puedes concentrarte en lo que dicen las demás personas en la reunión. Cuando llega tu turno de hablar, decides platicarles a todos sobre tu trabajo, para intentar desahogarte y tranquilizarte.
+
+--> ¿Qué haces?      (1) Hacer nada    (2) Hablar sobre el papel
+
+La gente se te queda viendo, mientras tu los observas con miedo. El host te agradece por venir, y reconoce que es difícil expresarse bien desde la catástrofe
+Pasa la reunión y se van todos. Lástima que era la reunión final de este grupo, por lo que ya no los verás jamás.
+
+Cuando llega tu turno de hablar, decides platicarles a todos sobre tu trabajo, para intentar desahogarte y tranquilizarte.
+Les cuentas a todos sobre la idea que tienes de intentar viajar al pasado para traer a todos los demás que desaparecieron. Nadie te toma en serio, e incluso se algunos se burlan y te dicen que es una idea tonta y sin sentido. Te empiezas a dar por vencido con la idea, y eso te ayuda a relajarte.
+Al final de la reunión, el host se acerca a ti y te pregunta sobre tu idea, porque le parece interesante. Te dice que quiere que lo acompañes, para enseñarte algo. Tu le dices que sí para aprovechar la oportunidad de no trabajar y relajarte. Nunca te habías puesto a observar a la gente que iba, entonces no conocías a nadie, pero en el camino te das cuenta de que la cara te parece conocida. Luego de pensar un rato, te das cuenta de que es el {0}.", heroes[1].Nombre
+
+"Llegando a los nuevos cuarteles de Los Vengadores, empiezas a platicar tu idea a {2} en compañía de {0} y {1}. A los todos les parece interesante y deciden ir todos a buscar a Los Vengadores restantes para empezar a trabajar. Tú, {1}, {0} y {2} empiezan su travesía por intentar volver a juntar a Los Vengadores.", heroes[0].Nombre, heroes[1].Nombre, heroes[2].Nombre
+
+"--> ¿A quién buscarán ?      Opciones: (1) {0} en Nueva York     (2) {1} en su casa de campo     (3) {2} en Nuevo Asgard     (4) {3} en Japon", heroes[4].Nombre, heroes[3].Nombre, heroes[5].Nombre, heroes[6].Nombre

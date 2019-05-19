@@ -8,6 +8,6 @@ namespace Endgame.Classes.Lugares
 {
     abstract class Lugar
     {
-        public abstract void describirLugar(string s);
+        public abstract void describirLugar(string d);
     }
 }
