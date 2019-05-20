@@ -21,7 +21,7 @@ namespace Endgame.Classes.Capitulos
         string templete = "";
         public LeerArchHistoria lah3;
 
-        public void Correr(Jugador jugador, List<Heroe> heroes, List<LugarClave> lugares, LeerArchHistoria lah2, Villano villano)
+        public override void Correr(Jugador jugador, List<Heroe> heroes, List<LugarClave> lugares, LeerArchHistoria lah2, Villano villano)
         {
             lah = lah2;
             lugaresl = lugares;
@@ -132,7 +132,8 @@ namespace Endgame.Classes.Capitulos
                                 TrayectoDescrito.registrarTrayecto("Eliges ir por la gema del Espacio");
                                 lah.LeerHistoria(27, 27, 0);
                                 Jugador.gemas.Add(new KeyItems("Gema del Espacio"));
-                                Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre);
+                                Jugador.gemas[Jugador.gemas.Count() - 1].describirItem();
+                                //Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre);
                                 posib1 = true;
                                 subcontador++;
                             }
@@ -141,7 +142,8 @@ namespace Endgame.Classes.Capitulos
                                 TrayectoDescrito.registrarTrayecto("Eliges ir por la gema del Tiempo");
                                 lah.LeerHistoria(29, 29, 0);
                                 Jugador.gemas.Add(new KeyItems("Gema del Tiempo"));
-                                Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre);
+                                Jugador.gemas[Jugador.gemas.Count() - 1].describirItem();
+                                //Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre);
                                 posib2 = true;
                                 subcontador++;
                             }
@@ -150,7 +152,8 @@ namespace Endgame.Classes.Capitulos
                                 TrayectoDescrito.registrarTrayecto("Eliges ir por la gema de la Mente");
                                 lah.LeerHistoria(31, 31, 0);
                                 Jugador.gemas.Add(new KeyItems("Gema de la Mente"));
-                                Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre);
+                                Jugador.gemas[Jugador.gemas.Count() - 1].describirItem();
+                                //Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre);
                                 posib3 = true;
                                 subcontador++;
                             }
@@ -167,22 +170,29 @@ namespace Endgame.Classes.Capitulos
                         {
                             Jugador.gemas.Add(new KeyItems("Gema del Tiempo"));
                             Jugador.gemas.Add(new KeyItems("Gema de la Mente"));
-                            Console.WriteLine();
-                            Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 2].Nombre + " y la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre); Console.ReadKey();
+                            Jugador.gemas[Jugador.gemas.Count() - 2].describirItem();
+                            Jugador.gemas[Jugador.gemas.Count() - 1].describirItem();
+                            //Console.WriteLine();
+                            //Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 2].Nombre + " y la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre); Console.ReadKey();
                         }
                         else if (posib2 == true)
                         {
                             Jugador.gemas.Add(new KeyItems("Gema del Espacio"));
                             Jugador.gemas.Add(new KeyItems("Gema de la Mente"));
-                            Console.WriteLine();
-                            Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 2].Nombre + " y la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre); Console.ReadKey();
+                            Jugador.gemas[Jugador.gemas.Count() - 2].describirItem();
+                            Jugador.gemas[Jugador.gemas.Count() - 1].describirItem();
+                            //Console.WriteLine();
+                            //Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 2].Nombre + " y la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre); Console.ReadKey();
                         }
                         else if (posib3 == true)
                         {
                             Jugador.gemas.Add(new KeyItems("Gema del Espacio"));
-                            Jugador.gemas.Add(new KeyItems("Gema de la Mente"));
+                            Jugador.gemas.Add(new KeyItems("Gema del Tiempo"));
+                            Jugador.gemas[Jugador.gemas.Count() - 2].describirItem();
+                            Jugador.gemas[Jugador.gemas.Count() - 1].describirItem();
                             Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 2].Nombre + " y la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre); Console.ReadKey();
                         }
+                        volver(jugador);
                         contador++;
                     }
                     else if (eleccion2 == 2) //Asgard Decente
@@ -200,14 +210,16 @@ namespace Endgame.Classes.Capitulos
                             {
                                 lah.LeerHistoria(68, 70, 0);
                                 Jugador.gemas.Add(new KeyItems("Gema de la Realidad"));
-                                Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre);
+                                Jugador.gemas[Jugador.gemas.Count() - 1].describirItem();
+                                //Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre);
                                 subcontador++;
                             }
                             else if (templete == "Rocket" || templete == "2")
                             {
                                 lah.LeerHistoria(74, 76, 0);
                                 Jugador.gemas.Add(new KeyItems("Gema de la Realidad"));
-                                Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre);
+                                Jugador.gemas[Jugador.gemas.Count() - 1].describirItem();
+                                //Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre);
                                 subcontador++;
                             }
                             else if (templete == "Tu" || templete == "3")
@@ -215,7 +227,8 @@ namespace Endgame.Classes.Capitulos
                                 TrayectoDescrito.registrarTrayecto("Vas por la gema de la realidad con Jean Foster");
                                 lah.LeerHistoria(79, 80, 0);
                                 Jugador.gemas.Add(new KeyItems("Gema de la Realidad"));
-                                Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre);
+                                Jugador.gemas[Jugador.gemas.Count() - 1].describirItem();
+                                //Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre);
                                 subcontador++;
                             }
                             else
@@ -224,6 +237,7 @@ namespace Endgame.Classes.Capitulos
                                 continue;
                             }
                         }
+                        volver(jugador);
                         contador++;
                     }
                     else if (eleccion2 == 3) //Morag Decente
@@ -242,7 +256,8 @@ namespace Endgame.Classes.Capitulos
                                 lah.LeerHistoria(135, 135, 0);
                                 heroes.RemoveAt(7);
                                 Jugador.gemas.Add(new KeyItems("Gema del Poder"));
-                                Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre);
+                                Jugador.gemas[Jugador.gemas.Count() - 1].describirItem();
+                                //Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre);
                                 subcontador++;
                             }
                             else if (templete == "Nebula" || templete == "2")
@@ -250,7 +265,8 @@ namespace Endgame.Classes.Capitulos
                                 lah.LeerHistoria(139, 139, 0);
                                 heroes.RemoveAt(9);
                                 Jugador.gemas.Add(new KeyItems("Gema del Poder"));
-                                Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre);
+                                Jugador.gemas[Jugador.gemas.Count() - 1].describirItem();
+                                //Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre);
                                 subcontador++;
                             }
                             else
@@ -259,6 +275,7 @@ namespace Endgame.Classes.Capitulos
                                 continue;
                             }
                         }
+                        volver(jugador);
                         contador++;
                     }
                     else if (eleccion2 == 4) //Vormir decente
@@ -269,7 +286,9 @@ namespace Endgame.Classes.Capitulos
                         lah.LeerHistoria(170, 170, 0);
                         heroes.RemoveAt(2);
                         Jugador.gemas.Add(new KeyItems("Gema del Alma"));
-                        Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre);
+                        Jugador.gemas[Jugador.gemas.Count() - 1].describirItem();
+                        //Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre);
+                        volver(jugador);
                         contador++;
                     }
                     else
@@ -295,7 +314,8 @@ namespace Endgame.Classes.Capitulos
                                 TrayectoDescrito.registrarTrayecto("Eliges ir por la gema del Espacio");
                                 lah.LeerHistoria(40, 40, 0);
                                 Jugador.gemas.Add(new KeyItems("Gema del Espacio"));
-                                Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre);
+                                Jugador.gemas[Jugador.gemas.Count() - 1].describirItem();
+                                //Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre);
                                 posib1 = true;
                                 subcontador++;
                             }
@@ -304,7 +324,8 @@ namespace Endgame.Classes.Capitulos
                                 TrayectoDescrito.registrarTrayecto("Eliges ir por la gema del Tiempo");
                                 lah.LeerHistoria(42, 42, 0);
                                 Jugador.gemas.Add(new KeyItems("Gema del Tiempo"));
-                                Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre);
+                                Jugador.gemas[Jugador.gemas.Count() - 1].describirItem();
+                                //Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre);
                                 posib2 = true;
                                 subcontador++;
 
@@ -314,7 +335,8 @@ namespace Endgame.Classes.Capitulos
                                 TrayectoDescrito.registrarTrayecto("Eliges ir por la gema de la Mente");
                                 lah.LeerHistoria(44, 45, 0);
                                 Jugador.gemas.Add(new KeyItems("Gema de la Mente"));
-                                Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre);
+                                Jugador.gemas[Jugador.gemas.Count() - 1].describirItem();
+                                //Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre);
                                 posib3 = true;
                                 subcontador++;
                             }
@@ -331,22 +353,29 @@ namespace Endgame.Classes.Capitulos
                         {
                             Jugador.gemas.Add(new KeyItems("Gema del Tiempo"));
                             Jugador.gemas.Add(new KeyItems("Gema de la Mente"));
-                            Console.WriteLine();
-                            Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 2].Nombre + " y la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre); Console.ReadKey();
+                            Jugador.gemas[Jugador.gemas.Count() - 2].describirItem();
+                            Jugador.gemas[Jugador.gemas.Count() - 1].describirItem();
+                            //Console.WriteLine();
+                            //Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 2].Nombre + " y la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre); Console.ReadKey();
                         }
                         else if (posib2 == true)
                         {
                             Jugador.gemas.Add(new KeyItems("Gema del Espacio"));
                             Jugador.gemas.Add(new KeyItems("Gema de la Mente"));
-                            Console.WriteLine();
-                            Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 2].Nombre + " y la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre); Console.ReadKey();
+                            Jugador.gemas[Jugador.gemas.Count() - 2].describirItem();
+                            Jugador.gemas[Jugador.gemas.Count() - 1].describirItem();
+                            //Console.WriteLine();
+                            //Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 2].Nombre + " y la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre); Console.ReadKey();
                         }
                         else if (posib3 == true)
                         {
                             Jugador.gemas.Add(new KeyItems("Gema del Espacio"));
-                            Jugador.gemas.Add(new KeyItems("Gema de la Mente"));
-                            Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 2].Nombre + " y la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre); Console.ReadKey();
+                            Jugador.gemas.Add(new KeyItems("Gema del Tiempo"));
+                            Jugador.gemas[Jugador.gemas.Count() - 2].describirItem();
+                            Jugador.gemas[Jugador.gemas.Count() - 1].describirItem();
+                            //Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 2].Nombre + " y la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre); Console.ReadKey();
                         }
+                        volver(jugador);
                         contador++;
                     }
                     else if (eleccion2 == 2) //Asgard mala
@@ -364,14 +393,16 @@ namespace Endgame.Classes.Capitulos
                             {
                                 lah.LeerHistoria(90, 92, 0);
                                 Jugador.gemas.Add(new KeyItems("Gema de la Realidad"));
-                                Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre);
+                                Jugador.gemas[Jugador.gemas.Count() - 1].describirItem();
+                                //Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre);
                                 subcontador++;
                             }
                             else if (templete == "Hulk" || templete == "2")
                             {
                                 lah.LeerHistoria(96, 98, 0);
                                 Jugador.gemas.Add(new KeyItems("Gema de la Realidad"));
-                                Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre);
+                                Jugador.gemas[Jugador.gemas.Count() - 1].describirItem();
+                                //Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre);
                                 subcontador++;
                             }
                             else if (templete == "Tu" || templete == "3")
@@ -379,7 +410,8 @@ namespace Endgame.Classes.Capitulos
                                 TrayectoDescrito.registrarTrayecto("Vas por la gema de la realidad con Jean Foster");
                                 lah.LeerHistoria(101, 102, 0);
                                 Jugador.gemas.Add(new KeyItems("Gema de la Realidad"));
-                                Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre);
+                                Jugador.gemas[Jugador.gemas.Count() - 1].describirItem();
+                                //Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre);
                                 subcontador++;
                             }
                             else
@@ -388,6 +420,7 @@ namespace Endgame.Classes.Capitulos
                                 continue;
                             }
                         }
+                        volver(jugador);
                         contador++;
                     }
                     else if (eleccion2 == 3) //Morag mala
@@ -418,6 +451,7 @@ namespace Endgame.Classes.Capitulos
                                 continue;
                             }
                         }
+                        volver(jugador);
                         contador++;
                     }
                     else if (eleccion2 == 4) //Vormir mala
@@ -427,6 +461,7 @@ namespace Endgame.Classes.Capitulos
                         heroes.RemoveAt(7);
                         Jugador.inventorio.RemoveAt(Jugador.inventorio.Count() - 1);
                         lah.LeerHistoria(173, 173, 0);
+                        volver(jugador);
                         contador++;
                     }
                     else
@@ -452,7 +487,8 @@ namespace Endgame.Classes.Capitulos
                                 TrayectoDescrito.registrarTrayecto("Eliges ir por la gema del Espacio");
                                 lah.LeerHistoria(52, 52, 0);
                                 Jugador.gemas.Add(new KeyItems("Gema del Espacio"));
-                                Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre);
+                                Jugador.gemas[Jugador.gemas.Count() - 1].describirItem();
+                                //Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre);
                                 posib1 = true;
                                 subcontador++;
                             }
@@ -461,7 +497,8 @@ namespace Endgame.Classes.Capitulos
                                 TrayectoDescrito.registrarTrayecto("Eliges ir por la gema del Tiempo");
                                 lah.LeerHistoria(54, 54, 0);
                                 Jugador.gemas.Add(new KeyItems("Gema del Tiempo"));
-                                Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre);
+                                Jugador.gemas[Jugador.gemas.Count() - 1].describirItem();
+                                //Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre);
                                 posib2 = true;
                                 subcontador++;
 
@@ -471,7 +508,8 @@ namespace Endgame.Classes.Capitulos
                                 TrayectoDescrito.registrarTrayecto("Eliges ir por la gema de la Mente");
                                 lah.LeerHistoria(56, 47, 0);
                                 Jugador.gemas.Add(new KeyItems("Gema de la Mente"));
-                                Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre);
+                                Jugador.gemas[Jugador.gemas.Count() - 1].describirItem();
+                                //Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre);
                                 posib3 = true;
                                 subcontador++;
                             }
@@ -480,7 +518,41 @@ namespace Endgame.Classes.Capitulos
                                 lah.errorHistoria();
                                 continue;
                             }
+                            //
+
+                            lah.LeerHistoria(57, 57, 0);
+
+                            if (posib1 == true)
+                            {
+                                Jugador.gemas.Add(new KeyItems("Gema del Tiempo"));
+                                Jugador.gemas.Add(new KeyItems("Gema de la Mente"));
+                                Jugador.gemas[Jugador.gemas.Count() - 2].describirItem();
+                                Jugador.gemas[Jugador.gemas.Count() - 1].describirItem();
+                                //Console.WriteLine();
+                                //Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 2].Nombre + " y la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre); Console.ReadKey();
+                            }
+                            else if (posib2 == true)
+                            {
+                                Jugador.gemas.Add(new KeyItems("Gema del Espacio"));
+                                Jugador.gemas.Add(new KeyItems("Gema de la Mente"));
+                                Jugador.gemas[Jugador.gemas.Count() - 2].describirItem();
+                                Jugador.gemas[Jugador.gemas.Count() - 1].describirItem();
+                                //Console.WriteLine();
+                                //Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 2].Nombre + " y la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre); Console.ReadKey();
+                            }
+                            else if (posib3 == true)
+                            {
+                                Jugador.gemas.Add(new KeyItems("Gema del Espacio"));
+                                Jugador.gemas.Add(new KeyItems("Gema del Tiempo"));
+                                Jugador.gemas[Jugador.gemas.Count() - 2].describirItem();
+                                Jugador.gemas[Jugador.gemas.Count() - 1].describirItem();
+                                Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 2].Nombre + " y la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre); Console.ReadKey();
+                            }
+                            volver(jugador);
+
+                            //
                         }
+                        volver(jugador);
                         contador++;
                     }
                     else if (eleccion2 == 2) //Asgard mejor
@@ -497,14 +569,16 @@ namespace Endgame.Classes.Capitulos
                             {
                                 lah.LeerHistoria(113, 115, 0);
                                 Jugador.gemas.Add(new KeyItems("Gema de la Realidad"));
-                                Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre);
+                                Jugador.gemas[Jugador.gemas.Count() - 1].describirItem();
+                                //Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre);
                                 subcontador++;
                             }
                             else if (templete == "Nebula" || templete == "2")
                             {
                                 lah.LeerHistoria(119, 122, 0);
                                 Jugador.gemas.Add(new KeyItems("Gema de la Realidad"));
-                                Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre);
+                                Jugador.gemas[Jugador.gemas.Count() - 1].describirItem();
+                                //Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre);
                                 subcontador++;
                             }
                             else if (templete == "Tu" || templete == "3")
@@ -512,7 +586,8 @@ namespace Endgame.Classes.Capitulos
                                 TrayectoDescrito.registrarTrayecto("Vas por la gema de la realidad con Jean Foster");
                                 lah.LeerHistoria(125, 126, 0);
                                 Jugador.gemas.Add(new KeyItems("Gema de la Realidad"));
-                                Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre);
+                                Jugador.gemas[Jugador.gemas.Count() - 1].describirItem();
+                                //Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre);
                                 subcontador++;
                             }
                             else
@@ -521,6 +596,7 @@ namespace Endgame.Classes.Capitulos
                                 continue;
                             }
                         }
+                        volver(jugador);
                         contador++;
                     }
                     else if (eleccion2 == 3) //Morag mejor
@@ -538,7 +614,8 @@ namespace Endgame.Classes.Capitulos
                                 lah.LeerHistoria(162, 162, 0);
                                 heroes.RemoveAt(1);
                                 Jugador.gemas.Add(new KeyItems("Gema del Poder"));
-                                Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre);
+                                Jugador.gemas[Jugador.gemas.Count() - 1].describirItem();
+                                //Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre);
                                 subcontador++;
                             }
                             else if (templete == "Rocket" || templete == "2")
@@ -546,7 +623,8 @@ namespace Endgame.Classes.Capitulos
                                 lah.LeerHistoria(166, 166, 0);
                                 heroes.RemoveAt(8);
                                 Jugador.gemas.Add(new KeyItems("Gema del Poder"));
-                                Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre);
+                                Jugador.gemas[Jugador.gemas.Count() - 1].describirItem();
+                                //Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre);
                                 subcontador++;
                             }
                             else
@@ -555,6 +633,7 @@ namespace Endgame.Classes.Capitulos
                                 continue;
                             }
                         }
+                        volver(jugador);
                         contador++;
                     }
                     else if (eleccion2 == 4) //Vormir mejor
@@ -565,7 +644,9 @@ namespace Endgame.Classes.Capitulos
                         lah.LeerHistoria(176, 176, 0);
                         heroes.RemoveAt(2);
                         Jugador.gemas.Add(new KeyItems("Gema del Alma"));
-                        Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre);
+                        Jugador.gemas[Jugador.gemas.Count() - 1].describirItem();
+                        //Console.WriteLine("Conseguiste la " + Jugador.gemas[Jugador.gemas.Count() - 1].Nombre);
+                        volver(jugador);
                         contador++;
                     }
                     else
@@ -583,6 +664,8 @@ namespace Endgame.Classes.Capitulos
             lugaresl[2].describirLugar();
 
             contador = 0;
+            subcontador = 0;
+
             templete = "";
 
             lah.LeerHistoria(177, 177, 0);
@@ -591,6 +674,7 @@ namespace Endgame.Classes.Capitulos
 
             lah3.LeerHistoria(54, 54, 0);
 
+            Jugador.inventorio.RemoveAt(Jugador.inventorio.Count()-1);
             lugaresl[1].describirLugar();
 
             if (eleccion1 == 1) //Final decente
@@ -712,6 +796,7 @@ namespace Endgame.Classes.Capitulos
                     Jugador.gemas.Add(new KeyItems("Gema de la Realidad"));
                 }
                 lah3.LeerHistoria(24, 28, 0);
+                TrayectoDescrito.registrarTrayecto("Vas a morir");
 
                 villano.conocer();
                 villano.matarPersonajes(jugador, heroes);
@@ -807,16 +892,36 @@ namespace Endgame.Classes.Capitulos
             }
         }
 
-        public override void Correr(Jugador jugador, List<Heroe> heroes, List<LugarClave> lugares, LeerArchHistoria lah2)
+        public static void volver(Jugador jugador)
         {
-            throw new Exception();
-        }
-
-        public void volver(Jugador jugador)
-        {
+            int sContador = 0;
+            string sTemplete = "";
             Console.WriteLine();
-            Console.WriteLine("Aun te queda una Partícula Pym");
+            Console.WriteLine("Aun te queda una Partícula Pym."); Console.ReadKey();
+            while(sContador < 1)
+            {
+                Console.WriteLine("-->¿Qué haces? (1) Volver a tu tiempo (2) Viajar a otro lado");
+                sTemplete = Console.ReadLine();
+                if (sTemplete == "Volver a tu tiempo" || sTemplete == "1")
+                {
+                    Console.WriteLine();
+                    Console.WriteLine("Te reúnes con tu equipo, y se preparan para volver a Nueva York del 2018. "); Console.ReadKey();
+                    sContador++;
+                }
+                else if (sTemplete == "Viajar a otro lado" || sTemplete == "2")
+                {
+                    Jugador.inventorio.RemoveAt(Jugador.inventorio.Count() - 1);
+                    Console.WriteLine();
+                    Console.WriteLine("Te has gastado todas tus partículas Pym, por lo que ya no puedes volver a tu tiempo, y nadie te puede salvar."); Console.ReadKey();
+                    Console.WriteLine("PERDISTE; PRESIONA UNA TECLA PARA CONTINUAR."); Console.ReadKey();
+                    Environment.Exit(0);
+                }
+                else
+                {
+                    Console.WriteLine();
+                    Console.WriteLine("Opción inválida."); Console.ReadKey();
+                }
+            }
         }
-
     }
 }

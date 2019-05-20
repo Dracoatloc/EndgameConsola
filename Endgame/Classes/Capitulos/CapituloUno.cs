@@ -20,7 +20,7 @@ namespace Endgame.Classes.Capitulos
         List<LugarClave> lugaresl;
         LeerArchHistoria lah;
 
-        public override void Correr(Jugador jugador, List<Heroe> heroes, List<LugarClave> lugares, LeerArchHistoria lah1)
+        public override void Correr(Jugador jugador, List<Heroe> heroes, List<LugarClave> lugares, LeerArchHistoria lah1,  Villano villano)
         {
             lugaresl = lugares;
             lah = lah1;
@@ -54,14 +54,9 @@ namespace Endgame.Classes.Capitulos
                     if (subcontador == 0)
                     {
                         TrayectoDescrito.registrarTrayecto("Tomas el papel científico");
-
                         lah.LeerHistoria(9, 9, 0);
-
                         Jugador.inventorio.Add(new KeyItems("Papel Científico"));
-
-                        Console.WriteLine();
-                        Console.WriteLine("Conseguiste un {0}!", Jugador.inventorio[0].Nombre);
-                        Console.WriteLine();
+                        Jugador.inventorio[Jugador.inventorio.Count() - 1].describirItem();
 
                         subcontador = 1;
                         continue;
@@ -74,9 +69,7 @@ namespace Endgame.Classes.Capitulos
                 }
                 else
                 {
-                    Console.WriteLine();
-                    Console.Write("Opción inválida. Vuelve a intentar."); Console.ReadKey(); Console.WriteLine();
-                    Console.Write("Recuerda escribir la opción tal cual como viene."); Console.ReadKey(); Console.WriteLine(); Console.WriteLine();
+                    lah.errorHistoria();
                     continue;
                 }
             }
@@ -133,9 +126,7 @@ namespace Endgame.Classes.Capitulos
                     }
                     else
                     {
-                        Console.WriteLine();
-                        Console.Write("Opción inválida. Vuelve a intentar."); Console.ReadKey(); Console.WriteLine();
-                        Console.Write("Recuerda escribir la opción tal cual como viene."); Console.ReadKey(); Console.WriteLine(); Console.WriteLine();
+                        lah.errorHistoria();
                         continue;
                     }
                 }
@@ -185,9 +176,7 @@ namespace Endgame.Classes.Capitulos
                     }
                     else
                     {
-                        Console.WriteLine();
-                        Console.Write("Opción inválida. Vuelve a intentar."); Console.ReadKey(); Console.WriteLine();
-                        Console.Write("Recuerda escribir la opción tal cual como viene."); Console.ReadKey(); Console.WriteLine(); Console.WriteLine();
+                        lah.errorHistoria();
                         continue;
                     }
                 }
@@ -246,9 +235,9 @@ namespace Endgame.Classes.Capitulos
                             heroes[3].conocer();
 
                             Jugador.inventorio.Add(new KeyItems("Rastreador"));
-
-                            Console.WriteLine();
-                            Console.WriteLine("Conseguiste un {0}!", Jugador.inventorio[Jugador.inventorio.Count() - 1].Nombre);
+                            Jugador.inventorio[Jugador.inventorio.Count() - 1].describirItem();
+                            //Console.WriteLine();
+                            //Console.WriteLine("Conseguiste un {0}!", Jugador.inventorio[Jugador.inventorio.Count() - 1].Nombre);
                             eleccion2 = true;
 
                             contador++;
@@ -301,9 +290,7 @@ namespace Endgame.Classes.Capitulos
                     }
                     else
                     {
-                        Console.WriteLine();
-                        Console.Write("Opción inválida. Vuelve a intentar."); Console.ReadKey(); Console.WriteLine();
-                        Console.Write("Recuerda escribir la opción tal cual como viene."); Console.ReadKey(); Console.WriteLine(); Console.WriteLine();
+                        lah.errorHistoria();
                         continue;
                     }
 
@@ -343,8 +330,9 @@ namespace Endgame.Classes.Capitulos
                             lah.LeerHistoria(55, 55, 0);
                             heroes[3].conocer();
                             Jugador.inventorio.Add(new KeyItems("Rastreador"));
-                            Console.WriteLine();
-                            Console.WriteLine("Conseguiste un {0}!", Jugador.inventorio[1].Nombre); Console.ReadKey();
+                            Jugador.inventorio[Jugador.inventorio.Count() - 1].describirItem();
+                            //Console.WriteLine();
+                            //Console.WriteLine("Conseguiste un {0}!", Jugador.inventorio[1].Nombre); Console.ReadKey();
 
                             eleccion2 = true;
                             contador++;
@@ -359,9 +347,7 @@ namespace Endgame.Classes.Capitulos
                     }
                     else
                     {
-                        Console.WriteLine();
-                        Console.Write("Opción inválida. Vuelve a intentar."); Console.ReadKey(); Console.WriteLine();
-                        Console.Write("Recuerda escribir la opción tal cual como viene."); Console.ReadKey(); Console.WriteLine(); Console.WriteLine();
+                        lah.errorHistoria();
                         continue;
                     }
                 }
@@ -442,9 +428,7 @@ namespace Endgame.Classes.Capitulos
                 }
                 else
                 {
-                    Console.WriteLine();
-                    Console.Write("Opción inválida. Vuelve a intentar."); Console.ReadKey(); Console.WriteLine();
-                    Console.Write("Recuerda escribir la opción tal cual como viene."); Console.ReadKey(); Console.WriteLine(); Console.WriteLine();
+                    lah.errorHistoria();
                     continue;
                 }
             }
@@ -484,8 +468,10 @@ namespace Endgame.Classes.Capitulos
                         Jugador.inventorio.Add(new KeyItems("Partículas Pym"));
                         Jugador.inventorio.Add(new KeyItems("Partículas Pym"));
 
-                        Console.WriteLine();
-                        Console.WriteLine("Conseguiste 2 {0}!", Jugador.inventorio[2].Nombre); Console.ReadKey();
+                        Jugador.inventorio[Jugador.inventorio.Count() - 2].describirItem();
+                        Jugador.inventorio[Jugador.inventorio.Count() - 1].describirItem();
+                        //Console.WriteLine();
+                        //Console.WriteLine("Conseguiste 2 {0}!", Jugador.inventorio[2].Nombre); Console.ReadKey();
                         eleccion2 = true;
                         continue;
                     }
@@ -499,9 +485,7 @@ namespace Endgame.Classes.Capitulos
                 }
                 else
                 {
-                    Console.WriteLine();
-                    Console.Write("Opción inválida. Vuelve a intentar."); Console.ReadKey(); Console.WriteLine();
-                    Console.Write("Recuerda escribir la opción tal cual como viene."); Console.ReadKey(); Console.WriteLine(); Console.WriteLine();
+                    lah.errorHistoria();
                     continue;
                 }
             }
@@ -509,7 +493,5 @@ namespace Endgame.Classes.Capitulos
             lah.LeerHistoria(77, 77, 0);
             lah.LeerHistoria(78, 78, 0);
         }
-
-
     }
 }

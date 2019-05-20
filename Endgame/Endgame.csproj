@@ -75,8 +75,8 @@
     <Compile Include="Classes\Misc\KeyItems.cs" />
     <Compile Include="Classes\Misc\TrayectoDescrito.cs" />
     <Compile Include="Interfaces\IGemas.cs" />
+    <Compile Include="Interfaces\IItems.cs" />
     <Compile Include="Interfaces\IPersonajes.cs" />
-    <Compile Include="Interfaces\IVidas.cs" />
     <Compile Include="Interfaces\IVillanos.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -90,7 +90,6 @@
     <Content Include="CaracteresEspeciales.txt" />
     <Content Include="Finales.txt" />
     <Content Include="Lugares.txt" />
-    <Content Include="Personajes.txt" />
     <Content Include="RutaRecorrida.txt" />
   </ItemGroup>
   <ItemGroup>

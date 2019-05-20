@@ -12,7 +12,7 @@ namespace Endgame.Classes.Capitulos
 {
     abstract class Capitulo
     {
-        public abstract void Correr(Jugador jugador, List<Heroe>heroes, List<LugarClave>lugares, LeerArchHistoria lah);
+        public abstract void Correr(Jugador jugador, List<Heroe>heroes, List<LugarClave>lugares, LeerArchHistoria lah, Villano villano);
         
     }
 }

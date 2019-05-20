@@ -64,7 +64,7 @@ namespace Endgame.Classes
 
         public void Jugar()
         {
-            capUno.Correr(jugador, heroes, lugares, lah1);
+            capUno.Correr(jugador, heroes, lugares, lah1, villano);
             capDos.Correr(jugador, heroes, lugares, lah2, villano);
         }
     }

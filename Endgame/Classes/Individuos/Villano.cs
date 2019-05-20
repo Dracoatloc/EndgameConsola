@@ -11,7 +11,6 @@ namespace Endgame.Classes.Individuos
     class Villano:Personaje, IVillanos, IPersonajes
     {
         int vida = 100;
-        bool victoria = false;
 
         public string Nombre { get => nombre; set => nombre = value; }
 

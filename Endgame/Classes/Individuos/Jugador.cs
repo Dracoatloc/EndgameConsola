@@ -29,7 +29,7 @@ namespace Endgame.Classes.Individuos
             Console.WriteLine("Instrucciones: ");
             Console.WriteLine("1) Lee con detención la historia y haz lo que se te pida. ");
             Console.WriteLine("2) Para la elección de opciones, por favor escribe el texto tal y como viene (alternativamente puede ser también en forma de número). ");
-            Console.WriteLine("3) Para continuar la historia solamente basta usar una tecla. ");
+            Console.WriteLine("3) Para continuar la historia solamente basta usar una tecla (preferiblemente el Enter). ");
             Console.WriteLine("4) El objetivo último del juego es que traigan de vuelta a la humanidad que fue desaparecida.");
             Console.WriteLine();
 
@@ -77,7 +77,8 @@ namespace Endgame.Classes.Individuos
                 Console.WriteLine("Con el poder de la creación y la destrucción a tu alcance, decides tomar las gemas del infinito."); Console.ReadKey();
                 Console.WriteLine("Mientras te pones el guante, estás asustado ya que sabes que te va a matar."); Console.ReadKey();
                 Console.WriteLine("Sin embargo, consideras que es algo que vale la pena, para salvar al universo"); Console.ReadKey();
-                Console.WriteLine("Tus últimas palabras son: \"Perdón mi familia, pues no podré verlos una ultima vez. \"");
+                Console.WriteLine("Tus últimos pensamientos son: \"Perdón mi familia, pues no podré verlos una ultima vez. \"");
+                Console.WriteLine("Tus últimas palabras: \"Yo soy {0} \"", Nombre);
                 contadorGemas = 6;
                 ganar();
             }
@@ -92,7 +93,6 @@ namespace Endgame.Classes.Individuos
             if(contadorGemas == 6)
             {
                 Console.WriteLine("GANASTE, PRESIONA UNA TECLA PARA SALIR."); Console.ReadKey();
-
                 Environment.Exit(0);
             }
         }

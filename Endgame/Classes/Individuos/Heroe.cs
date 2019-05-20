@@ -9,7 +9,6 @@ namespace Endgame.Classes.Individuos
 {
     class Heroe : Personaje, IPersonajes
     {
-        private int vidas = 50;
         public string Nombre { get => nombre; set => nombre = value; }
         public Heroe(string n)
         {
