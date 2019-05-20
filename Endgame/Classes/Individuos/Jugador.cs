@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using Endgame.Classes.LecturaArchivos;
 using Endgame.Interfaces;
 using Endgame.Classes.Misc;
+using System.IO;
+using System.Media;
 
 namespace Endgame.Classes.Individuos
 {
@@ -22,16 +24,39 @@ namespace Endgame.Classes.Individuos
         public Jugador()
         {
             ci = new CaracteresInvalidos();
-
             string templete = "";
 
+            try
+            {
+                Console.ForegroundColor = ConsoleColor.DarkMagenta;
+                Console.WriteLine(System.IO.File.ReadAllText(@"C:\Users\mtorr\source\repos\Endgame\logos.txt"));
+                Console.WriteLine("\n\n\n\n                                                               Presiona cualquier tecla para continuar");
+                using (SoundPlayer player = new SoundPlayer(@"C:\Users\mtorr\source\repos\Endgame\Avengers-[AudioTrimmer.com].wav"))
+                {
+                    player.Play();
+                    Console.ReadKey();
+                    player.Stop();
+                }
+                Console.Clear();
+                Console.ForegroundColor = ConsoleColor.White;
+            }
+            catch (FileNotFoundException)
+            {
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.WriteLine();
+                Console.WriteLine("ASEGURATE QUE EL ARCHIVO TENGA LA DIRECCION CORRECTA IMPLEMENTADA EN LA CLASE JUGADOR PARA QUE SALGA EL INTRO"); Console.ReadKey();
+                Console.WriteLine();
+            }
+
             Console.WriteLine("----------ENDGAME----------"); Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine("Instrucciones: ");
             Console.WriteLine("1) Lee con detención la historia y haz lo que se te pida. ");
             Console.WriteLine("2) Para la elección de opciones, por favor escribe el texto tal y como viene (alternativamente puede ser también en forma de número). ");
             Console.WriteLine("3) Para continuar la historia solamente basta usar una tecla (preferiblemente el Enter). ");
             Console.WriteLine("4) El objetivo último del juego es que traigan de vuelta a la humanidad que fue desaparecida.");
             Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.White;
 
             int checador = 1;
             bool funciona = false;
@@ -39,7 +64,7 @@ namespace Endgame.Classes.Individuos
             while (checador == 1)
             {
 
-                Console.WriteLine("Ingresa un nombre para tu personaje, que no incluya números ni caracteres especiales.");
+                Console.WriteLine("Ingresa un nombre para tu personaje, que no incluya números ni caracteres especiales (de los que se incluyen en el archivo CaracteresEspeciales.txt).");
                 templete = Console.ReadLine();
                 Console.WriteLine();
 
@@ -77,8 +102,8 @@ namespace Endgame.Classes.Individuos
                 Console.WriteLine("Con el poder de la creación y la destrucción a tu alcance, decides tomar las gemas del infinito."); Console.ReadKey();
                 Console.WriteLine("Mientras te pones el guante, estás asustado ya que sabes que te va a matar."); Console.ReadKey();
                 Console.WriteLine("Sin embargo, consideras que es algo que vale la pena, para salvar al universo"); Console.ReadKey();
-                Console.WriteLine("Tus últimos pensamientos son: \"Perdón mi familia, pues no podré verlos una ultima vez. \"");
-                Console.WriteLine("Tus últimas palabras: \"Yo soy {0} \"", Nombre);
+                Console.WriteLine("Tus últimos pensamientos son: \"Perdón mi familia, pues no podré verlos una ultima vez. \""); Console.ReadKey();
+                Console.WriteLine("Tus últimas palabras: \"Yo... soy... {0} \"!!", Nombre); Console.ReadKey();
                 contadorGemas = 6;
                 ganar();
             }

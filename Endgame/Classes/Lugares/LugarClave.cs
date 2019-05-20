@@ -24,8 +24,11 @@ namespace Endgame.Classes.Lugares
 
         public void describirLugar()
         {
+            Console.ForegroundColor = ConsoleColor.Magenta;
             Console.WriteLine();
             Console.WriteLine(Nombre + descripcion); Console.ReadKey();
+            Console.ForegroundColor = ConsoleColor.White;
+
         }
 
         public string Nombre { get => nombre; set => nombre = value; }

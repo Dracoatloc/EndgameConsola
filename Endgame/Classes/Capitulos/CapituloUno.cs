@@ -16,6 +16,7 @@ namespace Endgame.Classes.Capitulos
         string eleccion = "";
         int contador = 0;
         int subcontador = 0;
+        int xcontador = 0;
 
         List<LugarClave> lugaresl;
         LeerArchHistoria lah;
@@ -109,6 +110,8 @@ namespace Endgame.Classes.Capitulos
 
                                 heroes[0].conocer();
 
+                                xcontador = 1;
+
                                 continue;
                             }
                             else
@@ -158,6 +161,8 @@ namespace Endgame.Classes.Capitulos
                                 lah.LeerHistoria(37, 39, 0);
                                 subcontador++;
                                 heroes[1].conocer();
+                                xcontador = 2;
+
                                 continue;
                             }
                             else
@@ -195,6 +200,15 @@ namespace Endgame.Classes.Capitulos
             lugaresl[1].describirLugar();
 
             lah.LeerHistoria(41, 41, 0);
+            heroes[2].conocer();
+            if(xcontador == 1)
+            {
+                heroes[1].conocer();
+            }
+            else if(xcontador == 2)
+            {
+                heroes[0].conocer();
+            }
 
             ////////////////////////////
 
@@ -444,7 +458,7 @@ namespace Endgame.Classes.Capitulos
             {
                 lah.LeerHistoria(73, 73, 1);
                 eleccion = Console.ReadLine();
-                if(eleccion == "Prepararse para el mundo Cuántico" || eleccion == "1")
+                if(eleccion == "Prepararse para el mundo Cuantico" || eleccion == "1")
                 {
                     if (Jugador.inventorio.Count()==2)
                     {

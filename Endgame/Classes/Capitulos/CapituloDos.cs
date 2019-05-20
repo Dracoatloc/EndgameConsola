@@ -733,7 +733,6 @@ namespace Endgame.Classes.Capitulos
                             if (templete == "Yo mero" || templete == "1")
                             {
                                 TrayectoDescrito.registrarTrayecto("Chasqueas los dedos");
-                                lah3.LeerHistoria(9, 11, 0);
                                 jugador.usarGemas();
                             }
                             else if (templete == "Iron Man" || templete == "2" || templete == "Capitan America" || templete == "3")

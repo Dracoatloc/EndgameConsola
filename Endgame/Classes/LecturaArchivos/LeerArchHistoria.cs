@@ -13,24 +13,34 @@ namespace Endgame.Classes.LecturaArchivos
         public LeerArchHistoria(int i)
         {
             //@"C:\Users\mtorr\source\repos\Endgame\Capitulo2.txt"
-            
-            if(i == 1)
+            try
             {
-                archivoH = File.ReadAllLines(@"C:\Users\mtorr\source\repos\Endgame\Capitulo1.txt");
+                if (i == 1)
+                {
+                    
+                    archivoH = File.ReadAllLines(@"C:\Users\mtorr\source\repos\Endgame\Capitulo1.txt");
+                }
+                else if (i == 2)
+                {
+                    
+                    archivoH = File.ReadAllLines(@"C:\Users\mtorr\source\repos\Endgame\Capitulo2.txt");
+                }
+                else if (i == 3)
+                {
+                    
+                    archivoH = File.ReadAllLines(@"C:\Users\mtorr\source\repos\Endgame\Finales.txt");
+                }
+                else
+                {
+                    Console.WriteLine("Numero no aceptable. "); Console.ReadKey();
+                }
             }
-            else if(i == 2)
+            catch (FileNotFoundException)
             {
-                archivoH = File.ReadAllLines(@"C:\Users\mtorr\source\repos\Endgame\Capitulo2.txt");
+                Console.WriteLine();
+                Console.WriteLine("DIRECCION DE LOS ARCHIVOS NO SON CORRECTOS; ASEGURATE DE QUE LA DIRECCION NO SEA LA DE Users\\mtorr\\source, YA QUE ES LA PROPIA"); Console.ReadKey();
+                Environment.Exit(0);
             }
-            else if (i==3)
-            {
-                archivoH = File.ReadAllLines(@"C:\Users\mtorr\source\repos\Endgame\Finales.txt");
-            }
-            else
-            {
-                Console.WriteLine("Numero no aceptable. "); Console.ReadKey();
-            }
-
         }
 
         public void LeerHistoria(int x, int y, int z)
@@ -48,11 +58,13 @@ namespace Endgame.Classes.LecturaArchivos
                 }
                 else
                 {
+                    Console.ForegroundColor = ConsoleColor.Yellow;
                     Console.WriteLine();
                     for (int i = x; i <= y; i++)
                     {
                         Console.WriteLine(archivoH[i]);
                     }
+                    Console.ForegroundColor = ConsoleColor.White;
                 }
             }
             catch (Exception)
@@ -69,37 +81,6 @@ namespace Endgame.Classes.LecturaArchivos
             Console.Write("Opción inválida. Vuelve a intentar."); Console.ReadKey(); Console.WriteLine();
             Console.Write("Recuerda escribir la opción tal cual como viene."); Console.ReadKey(); Console.WriteLine(); Console.WriteLine();
         }
-
-        //public void LeerPregunta(int x)
-        //{
-        //    string templete = "";
-        //    Console.WriteLine();
-        //    try
-        //    {
-        //        Console.WriteLine(archivoP[x]);
-        //        templete = Console.ReadLine();
-        //    }
-        //    catch
-        //    {
-        //        Console.WriteLine("Fuera de índice; ERROR"); Console.ReadKey();
-        //        Environment.Exit(0);
-        //    }
-
-        //}
-
-
-        //public void Leer(int x, int y)
-        //{
-        //    foreach (string poco in todo)
-        //    {
-        //        string[] partes = poco.Split('&');
-        //    }
-        //}
-        
-
-
-
-
 
         public override bool validarNombre(string nombre, bool funciona)
         {

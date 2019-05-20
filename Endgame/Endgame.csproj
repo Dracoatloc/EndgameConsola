@@ -89,6 +89,7 @@
     <Content Include="Capitulo2.txt" />
     <Content Include="CaracteresEspeciales.txt" />
     <Content Include="Finales.txt" />
+    <Content Include="logos.txt" />
     <Content Include="Lugares.txt" />
     <Content Include="RutaRecorrida.txt" />
   </ItemGroup>

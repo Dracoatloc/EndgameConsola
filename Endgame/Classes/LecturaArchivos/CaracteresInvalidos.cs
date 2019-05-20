@@ -12,37 +12,46 @@ namespace Endgame.Classes.LecturaArchivos
 
         public override bool validarNombre(string nombre, bool funciona)
         {
-            string[] archivo = File.ReadAllLines(@"C:\Users\mtorr\source\repos\Endgame\CaracteresEspeciales.txt");
-
-            List<char> caracteres = new List<char>();
-            List<char> carNombre = new List<char>();
-
-            foreach (string s in archivo)
+            try
             {
-                caracteres.Add(char.Parse(s));
-            }
+                string[] archivo = File.ReadAllLines(@"C:\Users\mtorr\source\repos\Endgame\CaracteresEspeciales.txt");
 
-            foreach (char c in nombre)
-            {
-                carNombre.Add(c);
-            }
+                List<char> caracteres = new List<char>();
+                List<char> carNombre = new List<char>();
 
-            for (int i = 0; i < carNombre.Count(); i++)
-            {
-                for (int k = 0; k < caracteres.Count(); k++)
+                foreach (string s in archivo)
                 {
-                    if (carNombre[i] == caracteres[k])
+                    caracteres.Add(char.Parse(s));
+                }
+
+                foreach (char c in nombre)
+                {
+                    carNombre.Add(c);
+                }
+
+                for (int i = 0; i < carNombre.Count(); i++)
+                {
+                    for (int k = 0; k < caracteres.Count(); k++)
                     {
-                        Console.WriteLine();
-                        Console.WriteLine("No seguiste las instrucciones, vuelve a intentar. "); Console.ReadKey();
-                        Console.WriteLine();
-                        funciona = false;
-                        return funciona;
+                        if (carNombre[i] == caracteres[k])
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("No seguiste las instrucciones, vuelve a intentar. "); Console.ReadKey();
+                            Console.WriteLine();
+                            funciona = false;
+                            return funciona;
+                        }
                     }
                 }
+                return funciona = true;
             }
-
-            return funciona = true;
+            catch (FileNotFoundException)
+            {
+                Console.WriteLine();
+                Console.WriteLine("DIRECCION DE LOS ARCHIVOS NO SON CORRECTOS; ASEGURATE DE QUE LA DIRECCION NO SEA LA DE Users\\mtorr\\source, YA QUE ES LA PROPIA"); Console.ReadKey();
+                Environment.Exit(0);
+            }
+            return funciona;
         }
     }
 }

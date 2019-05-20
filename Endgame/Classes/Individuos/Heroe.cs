@@ -17,7 +17,9 @@ namespace Endgame.Classes.Individuos
 
         public void conocer()
         {
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("Conociste a " + Nombre + "! ");
+            Console.ForegroundColor = ConsoleColor.White;
         }
     }
 }

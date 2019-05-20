@@ -71,9 +71,10 @@ Cuando vas hacia Ant-Man a preguntarle, te dices a ti mismo, “Ant-Man es el ú
 Lo que era necesario para llegar al mundo cuántico, esencial para los viajes en el tiempo, son las partículas Pym. 
 Te dice que él no tiene, pero que probablemente haya en el laboratorio del doctor Pym.
 
---> ¿Qué haces?      Opciones: (1) Prepararse para el mundo Cuántico    (2) Ir al laboratorio del doctor Pym
+--> ¿Qué haces?      Opciones: (1) Prepararse para el mundo Cuantico    (2) Ir al laboratorio del doctor Pym
 
-Ant-man te lleva a su laboratorio, donde encuentras un lote de Partículas Pym.
+Ant-man te lleva a su laboratorio, donde encuentras un lote de Partículas Pym para todos, y te quedas con dos.
+
 
 Ya tienes las Partículas, ahora solo falta que se prepare todo el equipo.
 ----- FIN DEL CAPITULO 1: REFORMACION -----

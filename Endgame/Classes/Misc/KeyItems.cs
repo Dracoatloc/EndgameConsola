@@ -24,8 +24,11 @@ namespace Endgame.Classes.Misc
 
         public void describirItem()
         {
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine();
-            Console.WriteLine("Conseguiste un " + Nombre + "!"); Console.ReadKey();
+            Console.WriteLine("Conseguiste un(a) " + Nombre + "!"); Console.ReadKey();
+            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.White;
         }
     }
 }
