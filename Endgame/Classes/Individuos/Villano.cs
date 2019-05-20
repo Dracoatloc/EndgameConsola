@@ -24,7 +24,7 @@ namespace Endgame.Classes.Individuos
             vida = vida - m;
         }
 
-        public bool perder()
+        public bool matar()
         {
             return victoria;
         }

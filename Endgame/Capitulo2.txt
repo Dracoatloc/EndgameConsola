@@ -6,7 +6,7 @@ Elige una combinación posible de parejas.
 2) Nueva York 2012: Iron-man, Rocket; Asgard 2013: Capitán America, Hulk; Morag 2014: Thor, Black Widow; Vormir: War-Machine, Hawk Eye
 3) Nueva York 2012: Thor, Hawk Eye; Asgard 2013: Iron Man, Nebula; Morag 2014: Capitán America, Rocket ; Vormir 2014: Black Widow, Hulk
 
-¿Cuál es tu decisión? (1) Opcion 1 (2) Opcion 2 (3) Opcion 3
+-->¿Cuál es tu decisión? (1) Opcion 1 (2) Opcion 2 (3) Opcion 3
 
 Actualmente tienes 3 partículas pym para tu uso. Y para cada viaje se necesitan usar una partícula.
 Los lugares que se visitarán son: 
@@ -15,15 +15,15 @@ Los lugares que se visitarán son:
 3) Morag 
 4) Vormir
 
-¿A dónde quieres ir? (1) New York (2) Asgard (3) Morag (4) Vormir
+-->¿A dónde quieres ir? (1) New York (2) Asgard (3) Morag (4) Vormir
 
 Y así, todos los vengadores reunidos se prepararon para viajar en el tiempo.
 Iron Man junto a Hulk crearon trajes especiales que protejan a los usuarios de los efectos adversos del Mundo Cuántico,
 y que al mismo tiempo pueda usar sin problemas las Particulas Pym.
 
 New York
-Te encuentras a iron Man y a capitán américa, deciden separarse e ir por las gemas.
-¿Cuál gema quieres obtener?		(1) Espacio		(2) Tiempo		(3) Mente
+Te encuentras a Iron Man y a Capitán América, deciden separarse e ir por las gemas.
+-->¿Cuál gema quieres obtener?		(1) Espacio		(2) Tiempo		(3) Mente
 
 Todos se enfocan en su gema, vas por el teseracto, pero tienes que realizar un plan maestro para robarlo. Generas tu plan y lograr robarlo de manera correcta. (Obtienes la gema del espacio). Te diriges al centro de New York para encontrarte con los demás.
 
@@ -31,12 +31,12 @@ Todos se enfocan en su gema, vas por el ojo de Agamoto, pero tienes que convence
 
 Todos se enfocan en su gema, vas por el cetro de Loki, pero tienes que luchar con agentes de Hydra, sacas fuerzas de las vidas perdidas de tu familia, derrotas incluso al Capitán América del pasado (Obtienes la gema de la mente). Te diriges al centro de New York para encontrarte con los demás.
 
-Al llegar se dan cuenta de que todos consiguieron las gemas requeridas. (Obtienes dos gemas restantes)
+Al llegar se dan cuenta de que todos consiguieron las gemas requeridas.
 
 
 New York
-Te encuentras a iron Man y a Rocket, deciden separarse e ir por las gemas.
-¿Cuál gema quieres obtener? (1) Espacio		(2) Tiempo		(3) Mente
+Te encuentras a Iron Man y a Rocket, deciden separarse e ir por las gemas.
+-->¿Cuál gema quieres obtener? (1) Espacio		(2) Tiempo		(3) Mente
 
 Todos se enfocan en su gema, vas por el teseracto, pero tienes que realizar un plan maestro para robarlo. Generas tu plan y lograr robarlo de manera correcta. (Obtienes la gema del espacio). Te diriges al centro de New York para encontrarte con los demás.
 
@@ -48,7 +48,7 @@ Al llegar se dan cuenta de que todos consiguieron las gemas requeridas. (Obtiene
 
 New York
 Te encuentras a Thor y a Hawk Eye, deciden separarse e ir por las gemas.
-¿Cuál gema quieres obtener? (1) Espacio		(2) Tiempo		(3) Mente
+-->¿Cuál gema quieres obtener? (1) Espacio		(2) Tiempo		(3) Mente
 
 Todos se enfocan en su gema, vas por el teseracto, pero tienes que realizar un plan maestro para robarlo. Generas tu plan y lograr robarlo de manera correcta. (Obtienes la gema del espacio). Te diriges al centro de New York para encontrarte con los demás.
 
@@ -60,104 +60,104 @@ Al llegar se dan cuenta de que todos consiguieron las gemas requeridas. (Obtiene
 
 Asgard(Mas o menos)
 Te encuentras con Thor y Rocket, planean lo que tienen que hacer conseguir la gema de la realidad, tienen que decidir quién es el adecuado para ir por ella con Jean Foster.
-¿Quié va ?
-Thor
-Rocket
-Tú
+-->¿Quién va ? (1) Thor (2) Rocket (3) Tu
+
+
+
 
 (1)
 Thor tiene que encargarse y se va. Tu y Rocket tienen que hacerle saber a la mamá de thor que va a morir en poco tiempo.
 Se acercan con ella, pero antes de que puedan decirle nada aparece thor con el éther corriendo en dirección contraria.
-Suben a la nave con la gema (se obtiene la gema de la realidad)
+Suben a la nave con la gema.
 
 
 (2)
 Rocket tiene que encargarse y se va. Tu y Thor tienen que hacerle saber a la mamá de thor que va a morir en poco tiempo.
 Se acercan con ella, en cuanto la ve Thor comienza a llorar, porque no puede hacer nada más. Tratas de consolarlo y su mamá sugiere que salgan de inmediato, van a la nave y Rocket los está esperando comiendo unos tacos.  
-Suben a la nave con la gema (se obtiene la gema de la realidad)
+Suben a la nave con la gema.
 
 (3)
 Tú tienes que encargarte y te vas. Cuando llegas con Jane, parece que lo sabe todo y está más que dispuesta a darte la gema. La tomas, le das las gracias, pero antes de que te vayas te pide que saludes a Thor de su parte. 
-Sales corriendo y haces que Thor y Rocket corran hacia la nave (se obtiene la gema de la realidad)
+Sales corriendo y haces que Thor y Rocket corran hacia la nave.
 
 Asgard(Peor)
 Te encuentras con Capitán America y Hulk , planean lo que tienen que hacer conseguir la gema de la realidad, tienen que decidir quién es el adecuado para ir por ella con Jean Foster.
-¿Quié va ?
-Capitán America
-Hulk
-Tú
+-->¿Quién va? (1) Capitan America (2) Hulk (3) Tu
+
+
+
 
 (1)
 Capitan America tiene que encargarse y se va. Tu y Hulk tienen que hacerle saber a la mamá de Thor que va a morir en poco tiempo.
 Se acercan con ella, pero antes de que puedan decirle nada aparece thor con el éther corriendo en dirección contraria.
-Suben a la nave con la gema (se obtiene la gema de la realidad)
+Suben a la nave con la gema.
 
 
 (2)
 Hulk tiene que encargarse y se va. Tu y Capitán America tienen que hacerle saber a la mamá de thor que va a morir en poco tiempo.
 Se acercan con ella, pero en ese preciso instante la asesinan, por lo que no pueden hacer nada para salvarla. Llega Hulk con la gema corriendo torpemente hacia la nave
-Suben a la nave con la gema (se obtiene la gema de la realidad)
+Suben a la nave con la gema.
 
 (3)
 Tú tienes que encargarte y te vas. Cuando llegas con Jane, parece que lo sabe todo y está más que dispuesta a darte la gema. La tomas, le das las gracias, pero antes de que te vayas te pide que saludes a Thor de su parte. 
-Sales corriendo y haces que el Cap y Hulk corran hacia la nave (se obtiene la gema de la realidad)
+Sales corriendo y haces que el Cap y Hulk corran hacia la nave.
 
 
 Asgard(Mejor)
 Te encuentras con Iron Man y Nébula, planean lo que tienen que hacer conseguir la gema de la realidad, tienen que decidir quién es el adecuado para ir por ella con Jean Foster.
-¿Quié va ?
-Iron Man
-Nébula
-Tú
+-->¿Quién va? (1) Iron Man (2) Nebula (3) Tu
+
+
+
 
 (1)
 Iron Man tiene que encargarse y se va. Tu y Nebula tienen que hacerle saber a la mamá de Thor que va a morir en poco tiempo.
 Pero en ese momento nébula comienza a fallar, tiene problemas, intentar ayudarle pero Iron Man parece con la gema y se dirigen rápidamente a la nave
-Suben a la nave con la gema (se obtiene la gema de la realidad)
+Suben a la nave con la gema.
 
 
 (2)
 Nébula tiene que encargarse y se va. Tu y Iron Man tienen que hacerle saber a la mamá de thor que va a morir en poco tiempo.
 Se acercan con ella, le hace saber que vienen del futuro y le explican lo que ha pasado con su hijo, lo que la pone muy triste al darse cuenta de que morirá en muy poco tiempo.
 Aparece Nébula con la gema aunque un poco lastimada.
-Suben a la nave con la gema (se obtiene la gema de la realidad)
+Suben a la nave con la gema.
 
 (3)
 Tú tienes que encargarte y te vas. Cuando llegas con Jane, parece que lo sabe todo y está más que dispuesta a darte la gema. La tomas, le das las gracias, pero antes de que te vayas te pide que saludes a Thor de su parte. 
-Sales corriendo y haces que el Iron Man y Nébula corran hacia la nave (se obtiene la gema de la realidad)
+Sales corriendo y haces que el Iron Man y Nébula corran hacia la nave.
 
 
 Morag (Mas o menos)
-Te encuentras a War Machine y  Nébula, logran obtener fácilmente la gema noqueado a star lord del futuro. Pero de forma inesperada aparece Thanos del pasado, los tres intentan pero alguien no puede regresar, ¿Quién es?
-War Machine
-Nébula
+Te encuentras a War Machine y  Nébula, logran obtener fácilmente la gema noqueado a star lord del futuro. Pero de forma inesperada aparece Thanos del pasado, los tres intentan pero alguien no puede regresar, 
+-->¿Quién es? (1) War Machine (2) Nebula
+
 
 (1)
-Regresas con Nébula pero War Machine no, lo cual le brinda la oportunidad de usar la carga de partículas Pym de War Machine a Thanos. (Obtienes gema del poder)
+Regresas con Nébula pero War Machine no, lo cual le brinda la oportunidad de usar la carga de partículas Pym de War Machine a Thanos.
 
 
 (2)
-Regresas con War Machine pero Nébula no, lo cual le brinda la oportunidad de usar la carga de partículas Pym de Nébula a Thanos. (Obtienes gema del poder)
+Regresas con War Machine pero Nébula no, lo cual le brinda la oportunidad de usar la carga de partículas Pym de Nébula a Thanos.
 
 
 Morag (Peor)
-Te encuentras a Thor y a Black Widow, no logran obtener la gema ya que ninguno tiene algo para cubrirse mientras toman la gema. De forma inesperada aparece Thanos del pasado, los tres intentan pero alguien no puede regresar, ¿Quién es?
-Thor
-Black widow
+Te encuentras a Thor y a Black Widow, no logran obtener la gema ya que ninguno tiene algo para cubrirse mientras toman la gema. De forma inesperada aparece Thanos del pasado, los tres intentan pero alguien no puede regresar, 
+-->¿Quién es? (1) Thor (2) Black Widow
+
 
 (1)
 Regresas con Black widow pero Thor no, lo cual le brinda la oportunidad de usar la carga de partículas Pym de Thor a Thanos. 
 
 
 (2)
-Regresas con Thor pero Black widow no, lo cual le brinda la oportunidad de usar la carga de partículas Pym de Black widow a Thanos. 
+Regresas con Thor pero Black Widow no, lo cual le brinda la oportunidad de usar la carga de partículas Pym de Black widow a Thanos. 
 
 
 
 Morag (Mejor)
-Te encuentras a Capitán América y a Rocket, logran obtener fácilmente la gema noqueado a star lord del futuro. Pero de forma inesperada aparece Thanos del pasado, los tres intentan pero alguien no puede regresar, ¿Quién es?
-Capitán América
-Rocket
+Te encuentras a Capitán América y a Rocket, logran obtener fácilmente la gema noqueado a star lord del futuro. Pero de forma inesperada aparece Thanos del pasado, los tres intentan pero alguien no puede regresar, 
+-->¿Quién es? (1) Capitan America (2) Rocket
+
 
 (1)
 Regresas con Rocket pero Capitán América no, lo cual le brinda la oportunidad de usar la carga de partículas Pym de Capitán América a Thanos. (Obtienes gema del poder)
@@ -171,7 +171,7 @@ Vormir (Maso menos)
 Te encuentras a Black Widow y a Hawk Eye. Se les dice que para obtener la gema del alma tienen que realizar un sacrificio, Al saber que tu no representas alguien amado por ellos, quedas eliminado para el sacrificio. Ambos quieren morir pero ninguno quiere que el otro muera, comienzan a pelear y tras una larga pelea por suicidarse Black Widow se tira del barranco, lo que deja a Hawk eye con la gema del alma pero al verse tan derrotado te la entrega(obtienes gema del alma).
 
 Vormir (Peor)
-Te encuentras a War Machine y a Hawk eye. e les dice que para obtener la gema del alma tienen que realizar un sacrificio, Al saber que tu no representas alguien amado por ellos, quedas eliminado para el sacrificio. Ambos quieren morir pero ninguno quiere que el otro muera, comienzan a pelear y tras una larga pelea por suicidarse, War Machine se tira del barranco, pero al no tener una relación suficientemente fuerte con él no consigue obtener la gema, su muerte fue en vano.
+Te encuentras a War Machine y a Hawk eye. Le les dice que para obtener la gema del alma tienen que realizar un sacrificio, Al saber que tu no representas alguien amado por ellos, quedas eliminado para el sacrificio. Ambos quieren morir pero ninguno quiere que el otro muera, comienzan a pelear y tras una larga pelea por suicidarse, War Machine se tira del barranco, pero al no tener una relación suficientemente fuerte con él no consigue obtener la gema, su muerte fue en vano.
 
 Vormir (Mejor)
 Te encuentras a Black Widow y a Hulk, se les dice que para obtener la gema del alma tienen que realizar un sacrificio, Al saber que tu no representas alguien amado por ellos, quedas eliminado para el sacrificio. Ambos quieren morir pero ninguno quiere que el otro muera, comienzan a pelear y tras una larga pelea por suicidarse, Black Widow se tira del barranco, lo que deja a Hulk con la gema del alma y enfurecido, decidido a derrotar a Thanos, te entrega la gema al verse absorto en furia. (obtienes la gema del alma)

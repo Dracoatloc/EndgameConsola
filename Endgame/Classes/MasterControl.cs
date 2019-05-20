@@ -39,17 +39,22 @@ namespace Endgame.Classes
             heroes.Add(new Heroe("Hawkeye"));
             heroes.Add(new Heroe("Warmachine"));
             heroes.Add(new Heroe("Rocket"));
-            heroes.Add(new Heroe("Capitana Marvel"));
+
+            //heroes.Add(new Heroe("Capitana Marvel"));
 
             //villano = new Villano("Thanos");
 
-            lugares.Add(new LugarClave("Ciudad de Nueva York", "del año 2018"));
-            lugares.Add(new LugarClave("Nuevos Cuarteles de los Vengadores", "del año 2018"));
-            lugares.Add(new LugarClave("Reino Cuántico", "del año 2018"));
-            lugares.Add(new LugarClave("Viudad de Nueva York", "del año 2012"));
-            lugares.Add(new LugarClave("Asgard", "del año 2013"));
-            lugares.Add(new LugarClave("Morag", "del año 2014"));
-            lugares.Add(new LugarClave("Vormir", "del año 2014"));
+            lugares.Add(new LugarClave("Ciudad de Nueva York", " año 2018"));
+            lugares.Add(new LugarClave("Nuevos Cuarteles de los Vengadores", " año 2018"));
+            lugares.Add(new LugarClave("Reino Cuántico", " año 2018"));
+            lugares.Add(new LugarClave("Nuevo Asgard", " año 2018"));
+            lugares.Add(new LugarClave("Japón", " año 2018"));
+            lugares.Add(new LugarClave("Residencia Stark", " año 2018"));
+            lugares.Add(new LugarClave("Laboratorio del Doctor Pym", " año 2018"));
+            lugares.Add(new LugarClave("Ciudad de Nueva York", " año 2012"));
+            lugares.Add(new LugarClave("Asgard", " año 2013"));
+            lugares.Add(new LugarClave("Morag", " año 2014"));
+            lugares.Add(new LugarClave("Vormir", " año 2014"));
 
             capUno = new CapituloUno();
             capDos = new CapituloDos();

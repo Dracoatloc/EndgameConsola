@@ -42,3 +42,38 @@ Al final de la reunión, el host se acerca a ti y te pregunta sobre tu idea, por
 "Llegando a los nuevos cuarteles de Los Vengadores, empiezas a platicar tu idea a {2} en compañía de {0} y {1}. A los todos les parece interesante y deciden ir todos a buscar a Los Vengadores restantes para empezar a trabajar. Tú, {1}, {0} y {2} empiezan su travesía por intentar volver a juntar a Los Vengadores.", heroes[0].Nombre, heroes[1].Nombre, heroes[2].Nombre
 
 "--> ¿A quién buscarán ?      Opciones: (1) {0} en Nueva York     (2) {1} en su casa de campo     (3) {2} en Nuevo Asgard     (4) {3} en Japon", heroes[4].Nombre, heroes[3].Nombre, heroes[5].Nombre, heroes[6].Nombre
+
+Contactan a Hulk y llegan al acuerdo de encontrarse en un restaurante de Nueva York. Platican sobre tu idea, y también parece interesado. Su mente científica podría ayudar mucho en la investigación.
+
+El equipo llega a la casa de campo de Iron Man y también le platican la idea. Iron Man duda un poco el tener que dejar la familia que tiene y teme perderla, pero al final decide ayudarlos. Antes de volver a los cuarteles, te llama para darte uno de sus dispositivos. Ahora tienes un rastreador para encontrar a dos de Los Vengadores restantes.
+
+Thor se encontraba en Nuevo Asgard, el lugar donde los Asgardianos restantes se establecieron en la Tierra después de perder su planeta. Al llegar, no se puede ver Thor por ningún lado, entonces le preguntan a Valquiria, quien les dice dónde está su casa. Llegan a la casa de Thor y se encuentran con la sorpresa de que está desesperanzado y perdido porque se siente culpable de que no fue por la cabeza de Thanos cuando pudo, antes de que matara a la mitad de los seres vivos del universo. Por eso, fue difícil convencerlo de que los acompañara a intentar devolver a todos, pero al final lograron convencerlo.
+
+Hawkeye había perdido a su familia en el Snap de Thanos, pero se dio cuenta de que mucha gente mala había sobrevivido. Por eso, se dedicó a viajar por el mundo eliminando a toda esa gente mala, para hacerle justicia a toda la gente inocente que no había sobrevivido al Snap.El extrañaba mucho a su familia, y sentía la necesidad de hacer justicia, por lo que no fue difícil convencerlo de que los ayudara.
+
+Contactan a Hulk y llegan al acuerdo de encontrarse en un restaurante de Nueva York. Platican sobre tu idea, y también parece interesado. Su mente científica podría ayudar mucho en la investigación.
+
+El equipo llega a la casa de campo de Iron Man y también le platican la idea. Iron man duda un poco el tener que dejar la familia que tiene y teme perderla, pero al final decide ayudarlos. Antes de volver a los cuarteles, te llama para darte uno de sus dispositivos. Ahora tienes un rastreador para encontrar a dos de Los Vengadores restantes.
+
+Habiendo encontrado a Los Vengadores con los que se había perdido contacto, todos regresaron a los cuarteles y contactaron a los que seguían haciendo deber de héroes: War-machine y Rocket.
+Ya con el equipo completo, empezaron a trabajar en perfeccionar el viaje en el tiempo, pero se volvieron a encontrar en un punto donde no podían avanzar. Para intentar investigar, decides preguntarle a las mentes más inteligentes del equipo:
+1) Iron man   2) Ant-man   3) Hulk
+
+--> ¿A quién le preguntas?      Opciones: (1) Iron Man    (2) Hulk    (3) Ant-man
+
+Tony es una de las mentes más brillantes del mundo, y le tienes mucha fe de que te ayude a salir de ese punto en el que te atoraste. Empiezan a conversar, pero él te dice que también se atoró justo en ese punto. Se dió cuenta de que para avanzar, le hace falta algo, pero no sabe qué.
+Eso te ayudó, pero sigues sin saber qué es lo que te falta, por lo que sigues investigando.
+
+Vas a preguntarle a Hulk, a ver cuánto ha avanzado él en su investigación, pero te contesta que ha llegado a un punto en el que se quedó estancado, y no sabe qué es lo que le falta para poder continuar.
+Él te recomienda que sigas preguntando a los demás integrantes que están investigando, para ver si juntos pueden llegar a una mejor conclusión.
+
+Cuando vas hacia Ant-Man a preguntarle, te dices a ti mismo, “Ant-Man es el único que ha estado en el Mundo Cuántico, así que debería saber cómo llegó, ¿no?” Y tenías razón. Él tenía la respuesta a lo que a todos los había atascado.
+Lo que era necesario para llegar al mundo cuántico, esencial para los viajes en el tiempo, son las partículas Pym. 
+Te dice que él no tiene, pero que probablemente haya en el laboratorio del doctor Pym.
+
+--> ¿Qué haces?      Opciones: (1) Prepararse para el mundo Cuántico    (2) Ir al laboratorio del doctor Pym
+
+Ant-man te lleva a su laboratorio, donde encuentras un lote de Partículas Pym
+
+Ya tienes las Partículas, ahora solo falta que se prepare todo el equipo.
+----- FIN DEL CAPITULO 1: REFORMACION -----

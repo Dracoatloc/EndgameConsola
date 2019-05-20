@@ -8,6 +8,6 @@ namespace Endgame.Interfaces
 {
     interface IVillanos
     {
-        bool perder();
+        bool matar();
     }
 }

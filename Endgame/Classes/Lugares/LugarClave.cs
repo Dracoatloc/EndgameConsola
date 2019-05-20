@@ -22,9 +22,10 @@ namespace Endgame.Classes.Lugares
             descripcion = d;
         }
 
-        public string describirLugar()
+        public void describirLugar()
         {
-            return descripcion;
+            Console.WriteLine();
+            Console.WriteLine(Nombre + descripcion); Console.ReadKey();
         }
 
         public string Nombre { get => nombre; set => nombre = value; }

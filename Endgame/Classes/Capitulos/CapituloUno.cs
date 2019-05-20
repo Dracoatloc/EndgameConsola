@@ -25,8 +25,7 @@ namespace Endgame.Classes.Capitulos
             lah = lah1;
 
             lah.LeerHistoria(0 ,0 ,0);
-            Console.WriteLine(lugares[0].Nombre);
-            Console.WriteLine(lugares[0].describirLugar());
+            lugaresl[0].describirLugar();
 
             lah.LeerHistoria(1 ,4 ,0);
 
@@ -192,10 +191,14 @@ namespace Endgame.Classes.Capitulos
             eleccion = "";
             contador = 0;
             subcontador = 0;
+
             bool eleccion1 = false;
             bool eleccion2 = false;
             bool eleccion3 = false;
             bool eleccion4 = false;
+
+            Console.WriteLine();
+            lugaresl[1].describirLugar();
 
             lah.LeerHistoria(41, 41, 0);
 
@@ -213,8 +216,9 @@ namespace Endgame.Classes.Capitulos
                         if(eleccion1 == false)
                         {
                             TrayectoDescrito.registrarTrayecto("Buscan a Hulk en Nueva York");
-                            Console.WriteLine();
-                            Console.WriteLine("Contactan a Hulk y llegan al acuerdo de encontrarse en un restaurante de Nueva York. Platican sobre tu idea, y también parece interesado. Su mente científica podría ayudar mucho en la investigación."); Console.ReadKey();
+                            lugaresl[0].describirLugar();
+
+                            lah.LeerHistoria(45, 45, 0);
                             eleccion1 = true;
 
                             contador++;
@@ -232,12 +236,13 @@ namespace Endgame.Classes.Capitulos
                         if(eleccion2 == false)
                         {
                             TrayectoDescrito.registrarTrayecto("Buscan a Iron Man en su casa de campo");
-                            Console.WriteLine();
-                            Console.WriteLine("El equipo llega a la casa de campo de Iron Man y también le platican la idea. Iron Man duda un poco el tener que dejar la familia que tiene y teme perderla, pero al final decide ayudarlos. Antes de volver a los cuarteles, te llama para darte uno de sus dispositivos. Ahora tienes un rastreador para encontrar a dos de Los Vengadores restantes."); Console.ReadKey();
+                            lugaresl[5].describirLugar();
+                            lah.LeerHistoria(47, 47, 0);
+
                             Jugador.inventorio.Add(new KeyItems("Rastreador"));
 
                             Console.WriteLine();
-                            Console.WriteLine("Conseguiste un {0}", Jugador.inventorio[1].Nombre);
+                            Console.WriteLine("Conseguiste un {0}", Jugador.inventorio[Jugador.inventorio.Count()-1].Nombre);
                             eleccion2 = true;
 
                             contador++;
@@ -255,8 +260,8 @@ namespace Endgame.Classes.Capitulos
                         if(eleccion3 == false)
                         {
                             TrayectoDescrito.registrarTrayecto("Buscan a Thor en Nuevo Asgard");
-                            Console.WriteLine();
-                            Console.WriteLine("Thor se encontraba en Nuevo Asgard, el lugar donde los Asgardianos restantes se establecieron en la Tierra después de perder su planeta. Al llegar, no se puede ver Thor por ningún lado, entonces le preguntan a Valquiria, quien les dice dónde está su casa. Llegan a la casa de Thor y se encuentran con la sorpresa de que está desesperanzado y perdido porque se siente culpable de que no fue por la cabeza de Thanos cuando pudo, antes de que matara a la mitad de los seres vivos del universo. Por eso, fue difícil convencerlo de que los acompañara a intentar devolver a todos, pero al final lograron convencerlo."); Console.ReadKey();
+                            lugaresl[3].describirLugar();
+                            lah.LeerHistoria(49, 49, 0);
                             contador++;
                             eleccion3 = true;
                             continue;
@@ -273,8 +278,8 @@ namespace Endgame.Classes.Capitulos
                         if(eleccion4 ==false)
                         {
                             TrayectoDescrito.registrarTrayecto("Buscan a Hawkeye en Japon");
-                            Console.WriteLine();
-                            Console.WriteLine("Hawkeye había perdido a su familia en el Snap de Thanos, pero se dio cuenta de que mucha gente mala había sobrevivido. Por eso, se dedicó a viajar por el mundo eliminando a toda esa gente mala, para hacerle justicia a toda la gente inocente que no había sobrevivido al Snap.El extrañaba mucho a su familia, y sentía la necesidad de hacer justicia, por lo que no fue difícil convencerlo de que los ayudara."); Console.ReadKey();
+                            lugaresl[4].describirLugar();
+                            lah.LeerHistoria(51, 51, 0);
                             contador++;
                             eleccion4 = true;
                             continue;
@@ -297,7 +302,7 @@ namespace Endgame.Classes.Capitulos
                 }
                 else
                 {
-                    Console.WriteLine("--> ¿A quién buscarán?      Opciones: (1) Hulk en Nueva York    (2) Iron Man en su casa de campo");
+                    lah.LeerHistoria(43, 43, 1);
                     eleccion = Console.ReadLine();
 
                     if (eleccion == "Hulk en Nueva York" || eleccion == "1")
@@ -305,8 +310,8 @@ namespace Endgame.Classes.Capitulos
                         if(eleccion1 ==false)
                         {
                             TrayectoDescrito.registrarTrayecto("Buscan a Hulk en Nueva York");
-                            Console.WriteLine();
-                            Console.WriteLine("Contactan a Hulk y llegan al acuerdo de encontrarse en un restaurante de Nueva York. Platican sobre tu idea, y también parece interesado. Su mente científica podría ayudar mucho en la investigación."); Console.ReadKey();
+                            lugaresl[0].describirLugar();
+                            lah.LeerHistoria(53, 53, 0);
 
                             eleccion1 = true;
                             contador++;
@@ -325,9 +330,10 @@ namespace Endgame.Classes.Capitulos
                         if(eleccion2 == false)
                         {
                             TrayectoDescrito.registrarTrayecto("Buscan a Iron Man en su casa de campo");
-                            Console.WriteLine();
-                            Console.WriteLine("El equipo llega a la casa de campo de Iron Man y también le platican la idea. Iron man duda un poco el tener que dejar la familia que tiene y teme perderla, pero al final decide ayudarlos. Antes de volver a los cuarteles, te llama para darte uno de sus dispositivos. Ahora tienes un rastreador para encontrar a dos de Los Vengadores restantes."); Console.ReadKey();
+                            lugaresl[5].describirLugar();
+                            lah.LeerHistoria(55, 55, 0);
                             Jugador.inventorio.Add(new KeyItems("Rastreador"));
+                            Console.WriteLine();
                             Console.WriteLine("Conseguiste un {0}", Jugador.inventorio[1].Nombre); Console.ReadKey();
 
                             eleccion2 = true;
@@ -359,14 +365,12 @@ namespace Endgame.Classes.Capitulos
             eleccion2 = false;
             eleccion3 = false;
 
-            Console.WriteLine();
-            Console.WriteLine("Habiendo encontrado a Los Vengadores con los que se había perdido contacto, todos regresaron a los cuarteles y contactaron a los que seguían haciendo deber de héroes: War-machine y Rocket. "); Console.ReadKey();
-            Console.WriteLine("Ya con el equipo completo, empezaron a trabajar en perfeccionar el viaje en el tiempo, pero se volvieron a encontrar en un punto donde no podían avanzar. Para intentar investigar, decides preguntarle a las mentes más inteligentes del equipo:");
-            Console.WriteLine("1) Iron man   2) Ant-man   3) Hulk"); Console.ReadKey();
+            lugaresl[1].describirLugar();
+            lah.LeerHistoria(57, 58, 0);
 
             while(contador < 3)
             {
-                Console.WriteLine("--> ¿A quién le preguntas?      Opciones: (1) Iron Man    (2) Hulk    (3) Ant-man");
+                lah.LeerHistoria(61, 61, 1);
                 eleccion = Console.ReadLine();
 
                 if (eleccion == "Iron Man" || eleccion == "1")
@@ -374,9 +378,7 @@ namespace Endgame.Classes.Capitulos
                     if (eleccion1 == false)
                     {
                         TrayectoDescrito.registrarTrayecto("Preguntas a Iron Man");
-                        Console.WriteLine();
-                        Console.WriteLine("Tony es una de las mentes más brillantes del mundo, y le tienes mucha fe de que te ayude a salir de ese punto en el que te atoraste. Empiezan a conversar, pero él te dice que también se atoró justo en ese punto. Se dió cuenta de que para avanzar, le hace falta algo, pero no sabe qué."); Console.ReadKey();
-                        Console.WriteLine("Eso te ayudó, pero sigues sin saber qué es lo que te falta, por lo que sigues investigando."); Console.ReadKey();
+                        lah.LeerHistoria(63, 64, 0);
                         contador++;
                         continue;
                     }
@@ -392,9 +394,7 @@ namespace Endgame.Classes.Capitulos
                     if (eleccion2 == false)
                     {
                         TrayectoDescrito.registrarTrayecto("Preguntas a Hulk");
-                        Console.WriteLine();
-                        Console.WriteLine("Vas a preguntarle a Hulk, a ver cuánto ha avanzado él en su investigación, pero te contesta que ha llegado a un punto en el que se quedó estancado, y no sabe qué es lo que le falta para poder continuar."); Console.ReadKey();
-                        Console.WriteLine("Él te recomienda que sigas preguntando a los demás integrantes que están investigando, para ver si juntos pueden llegar a una mejor conclusión."); Console.ReadKey();
+                        lah.LeerHistoria(66, 67, 0);
                         contador++;
                         continue;
                     }
@@ -410,10 +410,7 @@ namespace Endgame.Classes.Capitulos
                     if (eleccion3==false)
                     {
                         TrayectoDescrito.registrarTrayecto("Preguntas a Ant-man");
-                        Console.WriteLine();
-                        Console.WriteLine("Cuando vas hacia Ant-Man a preguntarle, te dices a ti mismo, “Ant-Man es el único que ha estado en el Mundo Cuántico, así que debería saber cómo llegó, ¿no?” Y tenías razón. Él tenía la respuesta a lo que a todos los había atascado."); Console.ReadKey();
-                        Console.WriteLine("Lo que era necesario para llegar al mundo cuántico, esencial para los viajes en el tiempo, son las partículas Pym. "); Console.ReadKey();
-                        Console.WriteLine("Te dice que él no tiene, pero que probablemente haya en el laboratorio del doctor Pym"); Console.ReadKey();
+                        lah.LeerHistoria(69, 71, 0);
                         contador = 3;
                         continue;
                     }
@@ -442,7 +439,7 @@ namespace Endgame.Classes.Capitulos
 
             while(contador < 1)
             {
-                Console.WriteLine("--> ¿Qué haces?      Opciones: (1) Prepararse para el mundo Cuántico    (2) Ir al laboratorio del doctor Pym");
+                lah.LeerHistoria(63, 63, 0);
                 eleccion = Console.ReadLine();
                 if(eleccion == "Prepararse para el mundo Cuántico" || eleccion == "1")
                 {
@@ -462,15 +459,14 @@ namespace Endgame.Classes.Capitulos
                 {
                     if(eleccion2==false)
                     {
-                        Console.WriteLine();
-                        Console.WriteLine("Ant-man te lleva a su laboratorio, donde encuentras un lote de Partículas Pym"); Console.ReadKey();
+                        lugaresl[6].describirLugar();
+                        lah.LeerHistoria(65, 65, 0);
 
                         Jugador.inventorio.Add(new KeyItems("Partículas Pym"));
                         Jugador.inventorio.Add(new KeyItems("Partículas Pym"));
-                        Jugador.inventorio.Add(new KeyItems("Partículas Pym"));
 
                         Console.WriteLine();
-                        Console.WriteLine("Conseguiste 3 {0}", Jugador.inventorio[2].Nombre); Console.ReadKey();
+                        Console.WriteLine("Conseguiste 2 {0}", Jugador.inventorio[2].Nombre); Console.ReadKey();
                         eleccion2 = true;
                         continue;
                     }
@@ -490,9 +486,8 @@ namespace Endgame.Classes.Capitulos
                     continue;
                 }
             }
-            Console.WriteLine();
-            Console.WriteLine("Ya tienes las Partículas, ahora solo falta que te prepares todo el equipo."); Console.ReadKey();
-            Console.WriteLine("-------FIN DEL CAPITULO 1: REFORMACION-------");
+
+            lah.LeerHistoria(77, 78, 0);
         }
     }
 }
