@@ -11,7 +11,7 @@ namespace Endgame.Classes.Misc
 {
     class TrayectoDescrito
     {
-        public static void registrarTrayecto(string lineas)
+        public static void registrarTrayecto<T>(T lineas) where T: IComparable
         {
             //File.WriteAllText(@"C:\Users\mtorr\source\repos\Endgame\RutaRecorrida.txt", lineas);
             
@@ -20,7 +20,7 @@ namespace Endgame.Classes.Misc
             tsw.WriteLine(lineas);
             tsw.Close();
 
-            Jugador.recorrido.Add(lineas);
+            Jugador.recorrido.Add(lineas.ToString());
 
         }
     }

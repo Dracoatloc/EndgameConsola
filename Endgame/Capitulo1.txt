@@ -39,9 +39,9 @@ Cuando llega tu turno de hablar, decides platicarles a todos sobre tu trabajo, p
 Les cuentas a todos sobre la idea que tienes de intentar viajar al pasado para traer a todos los demás que desaparecieron. Nadie te toma en serio, e incluso se algunos se burlan y te dicen que es una idea tonta y sin sentido. Te empiezas a dar por vencido con la idea, y eso te ayuda a relajarte.
 Al final de la reunión, el host se acerca a ti y te pregunta sobre tu idea, porque le parece interesante. Te dice que quiere que lo acompañes, para enseñarte algo. Tu le dices que sí para aprovechar la oportunidad de no trabajar y relajarte. Nunca te habías puesto a observar a la gente que iba, entonces no conocías a nadie, pero en el camino te das cuenta de que la cara te parece conocida. Luego de pensar un rato, te das cuenta de que es el {0}.", heroes[1].Nombre
 
-"Llegando a los nuevos cuarteles de Los Vengadores, empiezas a platicar tu idea a {2} en compañía de {0} y {1}. A los todos les parece interesante y deciden ir todos a buscar a Los Vengadores restantes para empezar a trabajar. Tú, {1}, {0} y {2} empiezan su travesía por intentar volver a juntar a Los Vengadores.", heroes[0].Nombre, heroes[1].Nombre, heroes[2].Nombre
+Llegando a los nuevos cuarteles de Los Vengadores, empiezas a platicar tu idea a Black Widow en compañía de Ant-man y Capitán América. A los todos les parece interesante y deciden ir todos a buscar a Los Vengadores restantes para empezar a trabajar. Los demás y tú empiezan su travesía por intentar volver a juntar a Los Vengadores.
 
-"--> ¿A quién buscarán ?      Opciones: (1) {0} en Nueva York     (2) {1} en su casa de campo     (3) {2} en Nuevo Asgard     (4) {3} en Japon", heroes[4].Nombre, heroes[3].Nombre, heroes[5].Nombre, heroes[6].Nombre
+--> ¿A quién buscarán ?      Opciones: (1) Hulk en Nueva York     (2) Iron Man en su casa de campo     (3) Thor en Nuevo Asgard     (4) Hawkeye en Japon
 
 Contactan a Hulk y llegan al acuerdo de encontrarse en un restaurante de Nueva York. Platican sobre tu idea, y también parece interesado. Su mente científica podría ayudar mucho en la investigación.
 

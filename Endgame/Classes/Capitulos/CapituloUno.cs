@@ -439,7 +439,7 @@ namespace Endgame.Classes.Capitulos
 
             while(contador < 1)
             {
-                lah.LeerHistoria(63, 63, 0);
+                lah.LeerHistoria(73, 73, 1);
                 eleccion = Console.ReadLine();
                 if(eleccion == "Prepararse para el mundo Cuántico" || eleccion == "1")
                 {
@@ -460,7 +460,7 @@ namespace Endgame.Classes.Capitulos
                     if(eleccion2==false)
                     {
                         lugaresl[6].describirLugar();
-                        lah.LeerHistoria(65, 65, 0);
+                        lah.LeerHistoria(75, 75, 0);
 
                         Jugador.inventorio.Add(new KeyItems("Partículas Pym"));
                         Jugador.inventorio.Add(new KeyItems("Partículas Pym"));
