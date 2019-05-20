@@ -7,18 +7,18 @@ using Endgame.Interfaces;
 
 namespace Endgame.Classes.Individuos
 {
-    class Heroe : Personaje, IVengadores
+    class Heroe : Personaje, IPersonajes
     {
-        private int vidas =50;
+        private int vidas = 50;
         public string Nombre { get => nombre; set => nombre = value; }
         public Heroe(string n)
         {
             Nombre = n;
         }
 
-        public void morir()
+        public void conocer()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Conociste a " + Nombre + "! ");
         }
     }
 }

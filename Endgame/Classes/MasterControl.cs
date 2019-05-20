@@ -15,7 +15,7 @@ namespace Endgame.Classes
     {
         public static Jugador jugador;
         public static List<Heroe> heroes;
-        //public static Villano villano;
+        public static Villano villano;
         public static List<LugarClave> lugares;
 
         CapituloUno capUno;
@@ -39,10 +39,9 @@ namespace Endgame.Classes
             heroes.Add(new Heroe("Hawkeye"));
             heroes.Add(new Heroe("Warmachine"));
             heroes.Add(new Heroe("Rocket"));
+            heroes.Add(new Heroe("Nebula"));
 
-            //heroes.Add(new Heroe("Capitana Marvel"));
-
-            //villano = new Villano("Thanos");
+            villano = new Villano("Thanos");
 
             lugares.Add(new LugarClave("Ciudad de Nueva York", " año 2018"));
             lugares.Add(new LugarClave("Nuevos Cuarteles de los Vengadores", " año 2018"));
@@ -66,7 +65,7 @@ namespace Endgame.Classes
         public void Jugar()
         {
             capUno.Correr(jugador, heroes, lugares, lah1);
-            capDos.Correr(jugador, heroes, lugares, lah2);
+            capDos.Correr(jugador, heroes, lugares, lah2, villano);
         }
     }
 }

@@ -4,7 +4,7 @@ de la humanidad y has descubierto la manera de devolverlos a la vida, pero neces
 Vengadores que sobrevivieron.
 Has trabajado mucho a lo largo de la última semana, sin tener ningún resultado y necesitas hacer algo para distraerte.
 
---> ¿Qué haces?     (1) Salir por un paseo    (2) Ir a una reunion de sobrevivientes    (3) Tomar el papel cientifico"
+--> ¿Qué haces?     (1) Salir por un paseo    (2) Ir a una reunion de sobrevivientes    (3) Tomar el papel cientifico
 OJO: NO PONGAS ACENTOS, PARENTESIS, NI NUMEROS CON TEXTO
 
 Tomas el papel con el descubrimiento que hiciste relacionado al mundo cuántico para que puedas reflexionarlo.
@@ -20,8 +20,8 @@ El hombre contesta que es algo muy complicado y necesitas tener conocimientos ci
 EL hombre te agradece por haberle explicado lo que pasó con el mundo y se va. 
 Nunca lo vuelves a encontrar.
 
-Entonces, tu le dices que eres científico, y además le muestras la investigación que encontraste. ");
-Para tu suerte, resulta que el hombre es {0} es justo el tema del que estás haciendo tu investigación, ", heroes[0].Nombre
+Entonces, tu le dices que eres científico, y además le muestras la investigación que encontraste.
+Para tu suerte, resulta que el hombre es Ant-man es justo el tema del que estás haciendo tu investigación,
 y la información que él conoce podría ayudarte a seguir avanzando.
 
 Le comentas que estás haciendo esa investigación y mientras le estás platicando, le surge una idea.
@@ -37,10 +37,10 @@ Pasa la reunión y se van todos. Lástima que era la reunión final de este grup
 
 Cuando llega tu turno de hablar, decides platicarles a todos sobre tu trabajo, para intentar desahogarte y tranquilizarte.
 Les cuentas a todos sobre la idea que tienes de intentar viajar al pasado para traer a todos los demás que desaparecieron. Nadie te toma en serio, e incluso se algunos se burlan y te dicen que es una idea tonta y sin sentido. Te empiezas a dar por vencido con la idea, y eso te ayuda a relajarte.
-Al final de la reunión, el host se acerca a ti y te pregunta sobre tu idea, porque le parece interesante. Te dice que quiere que lo acompañes, para enseñarte algo. Tu le dices que sí para aprovechar la oportunidad de no trabajar y relajarte. Nunca te habías puesto a observar a la gente que iba, entonces no conocías a nadie, pero en el camino te das cuenta de que la cara te parece conocida. Luego de pensar un rato, te das cuenta de que es el {0}.", heroes[1].Nombre
+Al final de la reunión, el host se acerca a ti y te pregunta sobre tu idea, porque le parece interesante. Te dice que quiere que lo acompañes, para enseñarte algo. Tu le dices que sí para aprovechar la oportunidad de no trabajar y relajarte. Nunca te habías puesto a observar a la gente que iba, entonces no conocías a nadie, pero en el camino te das cuenta de que la cara te parece conocida. Luego de pensar un rato, te das cuenta de que es el Capitán América.
 
 Llegando a los nuevos cuarteles de Los Vengadores, empiezas a platicar tu idea a Black Widow en compañía de Ant-man y Capitán América. A los todos les parece interesante y deciden ir todos a buscar a Los Vengadores restantes para empezar a trabajar. Los demás y tú empiezan su travesía por intentar volver a juntar a Los Vengadores.
-
+--> ¿A quién buscarán ?      Opciones: (1) Hulk en Nueva York     (2) Iron Man en su casa de campo     
 --> ¿A quién buscarán ?      Opciones: (1) Hulk en Nueva York     (2) Iron Man en su casa de campo     (3) Thor en Nuevo Asgard     (4) Hawkeye en Japon
 
 Contactan a Hulk y llegan al acuerdo de encontrarse en un restaurante de Nueva York. Platican sobre tu idea, y también parece interesado. Su mente científica podría ayudar mucho en la investigación.
@@ -55,9 +55,9 @@ Contactan a Hulk y llegan al acuerdo de encontrarse en un restaurante de Nueva Y
 
 El equipo llega a la casa de campo de Iron Man y también le platican la idea. Iron man duda un poco el tener que dejar la familia que tiene y teme perderla, pero al final decide ayudarlos. Antes de volver a los cuarteles, te llama para darte uno de sus dispositivos. Ahora tienes un rastreador para encontrar a dos de Los Vengadores restantes.
 
-Habiendo encontrado a Los Vengadores con los que se había perdido contacto, todos regresaron a los cuarteles y contactaron a los que seguían haciendo deber de héroes: War-machine y Rocket.
-Ya con el equipo completo, empezaron a trabajar en perfeccionar el viaje en el tiempo, pero se volvieron a encontrar en un punto donde no podían avanzar. Para intentar investigar, decides preguntarle a las mentes más inteligentes del equipo:
-1) Iron man   2) Ant-man   3) Hulk
+Habiendo encontrado a Los Vengadores con los que se había perdido contacto, todos regresaron a los cuarteles y contactaron a los que seguían haciendo deber de héroes: War-machine, Rocket y Nébula.
+Ya con el equipo completo, empezaron a trabajar en perfeccionar el viaje en el tiempo, pero se volvieron a encontrar en un punto donde no podían avanzar. Para intentar investigar, decides preguntarle a las mentes más inteligentes del equipo.
+
 
 --> ¿A quién le preguntas?      Opciones: (1) Iron Man    (2) Hulk    (3) Ant-man
 
@@ -73,7 +73,7 @@ Te dice que él no tiene, pero que probablemente haya en el laboratorio del doct
 
 --> ¿Qué haces?      Opciones: (1) Prepararse para el mundo Cuántico    (2) Ir al laboratorio del doctor Pym
 
-Ant-man te lleva a su laboratorio, donde encuentras un lote de Partículas Pym
+Ant-man te lleva a su laboratorio, donde encuentras un lote de Partículas Pym.
 
 Ya tienes las Partículas, ahora solo falta que se prepare todo el equipo.
 ----- FIN DEL CAPITULO 1: REFORMACION -----

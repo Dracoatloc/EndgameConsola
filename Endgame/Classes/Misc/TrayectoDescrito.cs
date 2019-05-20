@@ -16,9 +16,9 @@ namespace Endgame.Classes.Misc
             //File.WriteAllText(@"C:\Users\mtorr\source\repos\Endgame\RutaRecorrida.txt", lineas);
             
 
-            TextWriter tsw = new StreamWriter(@"C:\Users\mtorr\source\repos\Endgame\RutaRecorrida.txt", true);
-            tsw.WriteLine(lineas);
-            tsw.Close();
+            TextWriter txtwtr = new StreamWriter(@"C:\Users\mtorr\source\repos\Endgame\RutaRecorrida.txt", true);
+            txtwtr.WriteLine(lineas);
+            txtwtr.Close();
 
             Jugador.recorrido.Add(lineas.ToString());
 

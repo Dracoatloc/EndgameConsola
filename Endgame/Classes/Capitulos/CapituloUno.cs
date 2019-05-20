@@ -16,23 +16,24 @@ namespace Endgame.Classes.Capitulos
         string eleccion = "";
         int contador = 0;
         int subcontador = 0;
+
         List<LugarClave> lugaresl;
         LeerArchHistoria lah;
 
-        public override void Correr(Jugador jugador, List<Heroe>heroes, List<LugarClave> lugares, LeerArchHistoria lah1)
+        public override void Correr(Jugador jugador, List<Heroe> heroes, List<LugarClave> lugares, LeerArchHistoria lah1)
         {
             lugaresl = lugares;
             lah = lah1;
 
-            lah.LeerHistoria(0 ,0 ,0);
+            lah.LeerHistoria(0, 0, 0);
             lugaresl[0].describirLugar();
 
-            lah.LeerHistoria(1 ,4 ,0);
+            lah.LeerHistoria(1, 4, 0);
 
             while (contador < 1)
             {
 
-                lah.LeerHistoria(6 ,7 ,1);
+                lah.LeerHistoria(6, 7, 1);
                 eleccion = Console.ReadLine();
 
                 if (eleccion == "Salir por un paseo" || eleccion == "1")
@@ -48,13 +49,13 @@ namespace Endgame.Classes.Capitulos
                     contador = 2;
                     continue;
                 }
-                else if(eleccion == "Tomar el papel cientifico" || eleccion =="3")
+                else if (eleccion == "Tomar el papel cientifico" || eleccion == "3")
                 {
-                    if(subcontador == 0)
+                    if (subcontador == 0)
                     {
                         TrayectoDescrito.registrarTrayecto("Tomas el papel científico");
 
-                        lah.LeerHistoria(9 ,9 ,0);
+                        lah.LeerHistoria(9, 9, 0);
 
                         Jugador.inventorio.Add(new KeyItems("Papel Científico"));
 
@@ -77,7 +78,7 @@ namespace Endgame.Classes.Capitulos
                     Console.Write("Opción inválida. Vuelve a intentar."); Console.ReadKey(); Console.WriteLine();
                     Console.Write("Recuerda escribir la opción tal cual como viene."); Console.ReadKey(); Console.WriteLine(); Console.WriteLine();
                     continue;
-                }            
+                }
             }
 
             eleccion = "";
@@ -91,11 +92,11 @@ namespace Endgame.Classes.Capitulos
                 while (subcontador < 1)
                 {
 
-                    lah.LeerHistoria(17 ,17 ,1);
+                    lah.LeerHistoria(17, 17, 1);
                     eleccion = Console.ReadLine();
-                    
 
-                    if (eleccion == "Nada" || eleccion =="1")
+
+                    if (eleccion == "Nada" || eleccion == "1")
                     {
                         TrayectoDescrito.registrarTrayecto("Haces nada.");
                         lah.LeerHistoria(19, 20, 0);
@@ -112,6 +113,9 @@ namespace Endgame.Classes.Capitulos
                                 lah.LeerHistoria(26, 28, 0);
 
                                 subcontador++;
+
+                                heroes[0].conocer();
+
                                 continue;
                             }
                             else
@@ -136,10 +140,10 @@ namespace Endgame.Classes.Capitulos
                     }
                 }
             }
-            else if(contador == 2)
+            else if (contador == 2)
             {
                 lah.LeerHistoria(30, 30, 0);
-                
+
                 while (subcontador < 1)
                 {
                     lah.LeerHistoria(32, 32, 1);
@@ -149,7 +153,7 @@ namespace Endgame.Classes.Capitulos
                     {
                         TrayectoDescrito.registrarTrayecto("Haces nada.");
                         lah.LeerHistoria(34, 35, 0);
-                        
+
                         Environment.Exit(0);
                     }
 
@@ -162,6 +166,7 @@ namespace Endgame.Classes.Capitulos
                             {
                                 lah.LeerHistoria(37, 39, 0);
                                 subcontador++;
+                                heroes[1].conocer();
                                 continue;
                             }
                             else
@@ -213,12 +218,12 @@ namespace Endgame.Classes.Capitulos
 
                     if (eleccion == "Hulk en Nueva York" || eleccion == "1")
                     {
-                        if(eleccion1 == false)
+                        if (eleccion1 == false)
                         {
                             TrayectoDescrito.registrarTrayecto("Buscan a Hulk en Nueva York");
                             lugaresl[0].describirLugar();
-
                             lah.LeerHistoria(45, 45, 0);
+                            heroes[4].conocer();
                             eleccion1 = true;
 
                             contador++;
@@ -233,16 +238,17 @@ namespace Endgame.Classes.Capitulos
                     }
                     else if (eleccion == "Iron Man en su casa de campo" || eleccion == "2")
                     {
-                        if(eleccion2 == false)
+                        if (eleccion2 == false)
                         {
                             TrayectoDescrito.registrarTrayecto("Buscan a Iron Man en su casa de campo");
                             lugaresl[5].describirLugar();
                             lah.LeerHistoria(47, 47, 0);
+                            heroes[3].conocer();
 
                             Jugador.inventorio.Add(new KeyItems("Rastreador"));
 
                             Console.WriteLine();
-                            Console.WriteLine("Conseguiste un {0}", Jugador.inventorio[Jugador.inventorio.Count()-1].Nombre);
+                            Console.WriteLine("Conseguiste un {0}!", Jugador.inventorio[Jugador.inventorio.Count() - 1].Nombre);
                             eleccion2 = true;
 
                             contador++;
@@ -257,11 +263,12 @@ namespace Endgame.Classes.Capitulos
                     }
                     else if (eleccion == "Thor en Nuevo Asgard" || eleccion == "3")
                     {
-                        if(eleccion3 == false)
+                        if (eleccion3 == false)
                         {
                             TrayectoDescrito.registrarTrayecto("Buscan a Thor en Nuevo Asgard");
                             lugaresl[3].describirLugar();
                             lah.LeerHistoria(49, 49, 0);
+                            heroes[5].conocer();
                             contador++;
                             eleccion3 = true;
                             continue;
@@ -273,13 +280,14 @@ namespace Endgame.Classes.Capitulos
                             continue;
                         }
                     }
-                    else if (eleccion == "Hawkeye en Japon" || eleccion =="4")
+                    else if (eleccion == "Hawkeye en Japon" || eleccion == "4")
                     {
-                        if(eleccion4 ==false)
+                        if (eleccion4 == false)
                         {
                             TrayectoDescrito.registrarTrayecto("Buscan a Hawkeye en Japon");
                             lugaresl[4].describirLugar();
                             lah.LeerHistoria(51, 51, 0);
+                            heroes[6].conocer();
                             contador++;
                             eleccion4 = true;
                             continue;
@@ -302,16 +310,17 @@ namespace Endgame.Classes.Capitulos
                 }
                 else
                 {
-                    lah.LeerHistoria(43, 43, 1);
+                    lah.LeerHistoria(42, 42, 1);
                     eleccion = Console.ReadLine();
 
                     if (eleccion == "Hulk en Nueva York" || eleccion == "1")
                     {
-                        if(eleccion1 ==false)
+                        if (eleccion1 == false)
                         {
                             TrayectoDescrito.registrarTrayecto("Buscan a Hulk en Nueva York");
                             lugaresl[0].describirLugar();
                             lah.LeerHistoria(53, 53, 0);
+                            heroes[4].conocer();
 
                             eleccion1 = true;
                             contador++;
@@ -327,14 +336,15 @@ namespace Endgame.Classes.Capitulos
 
                     else if (eleccion == "Iron Man en su casa de campo" || eleccion == "2")
                     {
-                        if(eleccion2 == false)
+                        if (eleccion2 == false)
                         {
                             TrayectoDescrito.registrarTrayecto("Buscan a Iron Man en su casa de campo");
                             lugaresl[5].describirLugar();
                             lah.LeerHistoria(55, 55, 0);
+                            heroes[3].conocer();
                             Jugador.inventorio.Add(new KeyItems("Rastreador"));
                             Console.WriteLine();
-                            Console.WriteLine("Conseguiste un {0}", Jugador.inventorio[1].Nombre); Console.ReadKey();
+                            Console.WriteLine("Conseguiste un {0}!", Jugador.inventorio[1].Nombre); Console.ReadKey();
 
                             eleccion2 = true;
                             contador++;
@@ -366,9 +376,15 @@ namespace Endgame.Classes.Capitulos
             eleccion3 = false;
 
             lugaresl[1].describirLugar();
-            lah.LeerHistoria(57, 58, 0);
+            lah.LeerHistoria(57, 57, 0);
 
-            while(contador < 3)
+            heroes[7].conocer();
+            heroes[8].conocer();
+            heroes[9].conocer();
+
+            lah.LeerHistoria(58, 58, 0);
+
+            while (contador < 3)
             {
                 lah.LeerHistoria(61, 61, 1);
                 eleccion = Console.ReadLine();
@@ -380,6 +396,7 @@ namespace Endgame.Classes.Capitulos
                         TrayectoDescrito.registrarTrayecto("Preguntas a Iron Man");
                         lah.LeerHistoria(63, 64, 0);
                         contador++;
+                        eleccion1 = true;
                         continue;
                     }
                     else
@@ -396,6 +413,7 @@ namespace Endgame.Classes.Capitulos
                         TrayectoDescrito.registrarTrayecto("Preguntas a Hulk");
                         lah.LeerHistoria(66, 67, 0);
                         contador++;
+                        eleccion2 = true;
                         continue;
                     }
                     else
@@ -412,6 +430,7 @@ namespace Endgame.Classes.Capitulos
                         TrayectoDescrito.registrarTrayecto("Preguntas a Ant-man");
                         lah.LeerHistoria(69, 71, 0);
                         contador = 3;
+                        eleccion3 = true;
                         continue;
                     }
                     else
@@ -446,7 +465,7 @@ namespace Endgame.Classes.Capitulos
                     if (Jugador.inventorio.Count()==2)
                     {
                         Console.WriteLine();
-                        Console.WriteLine("Ni siquiera tienes las Partículas Pym"); Console.ReadKey();
+                        Console.WriteLine("Ni siquiera tienes las Partículas Pym!"); Console.ReadKey();
                         continue;
                     }
                     else
@@ -466,7 +485,7 @@ namespace Endgame.Classes.Capitulos
                         Jugador.inventorio.Add(new KeyItems("Partículas Pym"));
 
                         Console.WriteLine();
-                        Console.WriteLine("Conseguiste 2 {0}", Jugador.inventorio[2].Nombre); Console.ReadKey();
+                        Console.WriteLine("Conseguiste 2 {0}!", Jugador.inventorio[2].Nombre); Console.ReadKey();
                         eleccion2 = true;
                         continue;
                     }
@@ -487,71 +506,10 @@ namespace Endgame.Classes.Capitulos
                 }
             }
 
-            lah.LeerHistoria(77, 78, 0);
+            lah.LeerHistoria(77, 77, 0);
+            lah.LeerHistoria(78, 78, 0);
         }
+
+
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-//int opcionesElegidas = 0;
-
-/*
-        while (contador != 1)
-            {
-                
-                Console.WriteLine("--> ¿Qué haces?      Opciones: (1) Salir por un paseo    (2) Salir por un paseo");
-                eleccion = Console.ReadLine();
-
-                //if (opcionesElegidas == 3)
-                //{
-                //    Console.Write(""); Console.ReadKey(); Console.WriteLine();
-                //    Console.Write(""); Console.ReadKey(); Console.WriteLine();
-                //    //jugador.ReducirVida(20);
-                //}
-
-                if (eleccion == "")
-                {
-                    //TrayectoDescrito.registrarTrayecto("Piensas. ");
-                    Console.Write(""); Console.ReadKey(); Console.WriteLine(); Console.WriteLine();
-                    opcionesElegidas++;
-                    continue;
-                }
-
-                else if (eleccion == "")
-                {
-                    //TrayectoDescrito.registrarTrayecto("Ves a los lados. ");
-                    Console.Write(""); Console.ReadKey(); Console.WriteLine(); Console.WriteLine();
-                    opcionesElegidas++;
-                    continue;
-                }
-                else if (eleccion == "")
-                {
-                    //TrayectoDescrito.registrarTrayecto("Intentas gritar. ");
-                    Console.Write(""); Console.ReadKey(); Console.WriteLine(); Console.WriteLine();
-                    opcionesElegidas++;
-                    continue;
-                }
-                else if (eleccion == "")
-                {
-                    //TrayectoDescrito.registrarTrayecto("Intentar levantarse. ");
-                    Console.Write(""); Console.ReadKey(); Console.WriteLine(); Console.WriteLine();
-                    contador++;
-                }
-                else
-                {
-                    Console.Write("Opción inválida. Vuelve a intentar."); Console.ReadKey(); Console.WriteLine();
-                    Console.Write("Recuerda también escribir la opción tal cual como viene."); Console.ReadKey(); Console.WriteLine(); Console.WriteLine();
-                    continue;
-                }
-            }
-*/

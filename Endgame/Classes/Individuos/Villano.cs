@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Endgame.Interfaces;
+using Endgame.Classes.Individuos;
 
 namespace Endgame.Classes.Individuos
 {
-    class Villano:Personaje, IVillanos
+    class Villano:Personaje, IVillanos, IPersonajes
     {
         int vida = 100;
         bool victoria = false;
@@ -24,10 +25,24 @@ namespace Endgame.Classes.Individuos
             vida = vida - m;
         }
 
-        public bool matar()
+        public void matarPersonajes(Jugador jugador, List<Heroe>heroes)
         {
-            return victoria;
+            heroes.Clear();
+            matar();
         }
 
+        public void matar()
+        {
+            Console.WriteLine();
+            Console.WriteLine("Thanos: \"No hay forma de escaparse del destino.\""); Console.ReadKey();
+            Console.WriteLine("PERDISTE; PRESIONA UNA TECLA PARA SALIRTE"); Console.ReadKey();
+            Environment.Exit(0);
+        }
+
+        public void conocer()
+        {
+            Console.WriteLine();
+            Console.WriteLine(Nombre + " acaba de aparecer!"); Console.ReadKey();
+        }
     }
 }

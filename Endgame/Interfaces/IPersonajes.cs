@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Endgame.Interfaces
 {
-    interface IVillanos
+    interface IPersonajes
     {
-        void matar();
+        void conocer();
     }
 }

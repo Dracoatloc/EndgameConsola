@@ -9,7 +9,7 @@ using Endgame.Classes.Misc;
 
 namespace Endgame.Classes.Individuos
 {
-    class Jugador:Personaje, IGemas
+    class Jugador:Personaje, IGemas, IVillanos
     {
         public static List<string> recorrido = new List<string>();
         public static List<KeyItems> inventorio = new List<KeyItems>();
@@ -64,13 +64,10 @@ namespace Endgame.Classes.Individuos
             Console.WriteLine("Fue entonces cuando tuviste la resolución de rastrear a los vengadores restantes ");
             Console.WriteLine("para hacer un último intento de revertir las cosas antes de que todos se den por vencidos completamente."); Console.ReadKey(); Console.WriteLine();
 
-            Console.WriteLine("Es tu oportunidad para demostrar lo que puedes hacer por la humanidad. Si lo haces bien podrás lograr un resultado ideal.");
+            Console.WriteLine("Es tu oportunidad para demostrar lo que puedes hacer por la humanidad. Si lo haces bien podrás lograr un buen resultado.");
             Console.WriteLine("Pero si te equivocas, el desenlace puede ser catastrófico."); Console.ReadKey(); Console.WriteLine();
         }
         public string Nombre { get => nombre; set => nombre = value; }
-
-
-
 
         public void usarGemas()
         {
@@ -94,10 +91,15 @@ namespace Endgame.Classes.Individuos
         {
             if(contadorGemas == 6)
             {
-                Console.WriteLine("Ganaste.");
-                Console.WriteLine("Presiona una tecla para salir."); Console.ReadKey();
+                Console.WriteLine("GANASTE, PRESIONA UNA TECLA PARA SALIR."); Console.ReadKey();
+
                 Environment.Exit(0);
             }
+        }
+
+        public void matar()
+        {
+            throw new NotImplementedException();
         }
     }
 }

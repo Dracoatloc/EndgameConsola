@@ -75,7 +75,7 @@
     <Compile Include="Classes\Misc\KeyItems.cs" />
     <Compile Include="Classes\Misc\TrayectoDescrito.cs" />
     <Compile Include="Interfaces\IGemas.cs" />
-    <Compile Include="Interfaces\IVengadores.cs" />
+    <Compile Include="Interfaces\IPersonajes.cs" />
     <Compile Include="Interfaces\IVidas.cs" />
     <Compile Include="Interfaces\IVillanos.cs" />
     <Compile Include="Program.cs" />

@@ -33,8 +33,10 @@ namespace Endgame.Classes.LecturaArchivos
                 {
                     if (carNombre[i] == caracteres[k])
                     {
-                        Console.WriteLine("No seguiste las instrucciones, vuelve a intentar. ");
                         Console.WriteLine();
+                        Console.WriteLine("No seguiste las instrucciones, vuelve a intentar. "); Console.ReadKey();
+                        Console.WriteLine();
+                        funciona = false;
                         return funciona;
                     }
                 }

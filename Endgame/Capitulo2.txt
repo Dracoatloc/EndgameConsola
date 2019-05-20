@@ -1,5 +1,5 @@
 ﻿----- CAPITULO 2: TIME HEIST -----
-En estos momentos tu tienes 3 partículas Pym y los demás tienen lo suficiente para poder regresar, si no las usas de la manera correcta nadie podrá rescatarte.
+En estos momentos tu tienes 2 partículas Pym y los demás tienen lo suficiente para poder regresar, si no las usas de la manera correcta nadie podrá rescatarte.
 Al desarrollar el viaje en el tiempo completamente el equipo necesita ponerse de acuerdo para mandar a varios equipos al pasado para conseguir las gemas del infinito antes de que Thanos las consiga:
 Elige una combinación posible de parejas.
 1) Nueva York 2012: Capitán America, Iron Man; Asgard 2013: Thor, Rocket; Morag 2014: War-Machine, Nebula; Vormir 2014: Black Window, Hawk Eye
@@ -8,7 +8,7 @@ Elige una combinación posible de parejas.
 
 -->¿Cuál es tu decisión? (1) Opcion 1 (2) Opcion 2 (3) Opcion 3
 
-Actualmente tienes 3 partículas pym para tu uso. Y para cada viaje se necesitan usar una partícula.
+Actualmente tienes 2 partículas pym para tu uso. Y para cada viaje se necesitan usar una partícula.
 Los lugares que se visitarán son: 
 1) New York
 2) Asgard
@@ -43,7 +43,7 @@ Todos se enfocan en su gema, vas por el teseracto, pero tienes que realizar un p
 Todos se enfocan en su gema, vas por el ojo de Agamoto, pero tienes que convencer a la Hechicera suprema. Luego de varias promesas logras obtener (Obtienes la gema de tiempo). Te diriges al centro de New York para encontrarte con los demás.
 
 Todos se enfocan en su gema, vas por el cetro de Loki, pero tienes que luchar con agentes de Hydra, sacas fuerzas de las vidas perdidas de tu familia, derrotas incluso al capitán america del pasado(Obtienes la gema de la mente)Te diriges al centro de New York para encontrarte con los demás.
-Al llegar se dan cuenta de que todos consiguieron las gemas requeridas. (Obtienes dos gemas restantes)
+Al llegar se dan cuenta de que todos consiguieron las gemas requeridas.
 
 
 New York
@@ -55,7 +55,7 @@ Todos se enfocan en su gema, vas por el teseracto, pero tienes que realizar un p
 Todos se enfocan en su gema, vas por el ojo de Agamoto, pero tienes que convencer a la Hechicera suprema. Luego de varias promesas logras obtener (Obtienes la gema de tiempo). Te diriges al centro de New York para encontrarte con los demás.
 
 Todos se enfocan en su gema, vas por el cetro de Loki, pero tienes que luchar con agentes de Hydra, sacas fuerzas de las vidas perdidas de tu familia, derrotas incluso al capitán america del pasado(Obtienes la gema de la mente)Te diriges al centro de New York para encontrarte con los demás.
-Al llegar se dan cuenta de que todos consiguieron las gemas requeridas. (Obtienes dos gemas restantes)
+Al llegar se dan cuenta de que todos consiguieron las gemas requeridas.
 
 
 Asgard(Mas o menos)
@@ -155,7 +155,7 @@ Regresas con Thor pero Black Widow no, lo cual le brinda la oportunidad de usar 
 
 
 Morag (Mejor)
-Te encuentras a Capitán América y a Rocket, logran obtener fácilmente la gema noqueado a star lord del futuro. Pero de forma inesperada aparece Thanos del pasado, los tres intentan pero alguien no puede regresar, 
+Te encuentras a Capitán América y a Rocket, logran obtener fácilmente la gema noqueando a star lord del futuro. Pero de forma inesperada aparece Thanos del pasado, los tres intentan pero alguien no puede regresar, 
 -->¿Quién es? (1) Capitan America (2) Rocket
 
 
@@ -175,77 +175,4 @@ Te encuentras a War Machine y a Hawk eye. Le les dice que para obtener la gema d
 
 Vormir (Mejor)
 Te encuentras a Black Widow y a Hulk, se les dice que para obtener la gema del alma tienen que realizar un sacrificio, Al saber que tu no representas alguien amado por ellos, quedas eliminado para el sacrificio. Ambos quieren morir pero ninguno quiere que el otro muera, comienzan a pelear y tras una larga pelea por suicidarse, Black Widow se tira del barranco, lo que deja a Hulk con la gema del alma y enfurecido, decidido a derrotar a Thanos, te entrega la gema al verse absorto en furia. (obtienes la gema del alma)
-
---------------------------------------------------------------------------------------------------------------------------------
-Fase tercera
-
-Regreso a la tierra (mas o menos)
-Al regresar a la tierra te das cuenta de todo lo que pasó:
-Se obtuvieron las tres gemas desde New York, también se consiguió el éter desde asgard, la gema del poder está en tus manos pero (Quien eligio) no volvió y Hawk eye tiene la gema del alma pero no está con Black Widow.
-De pronto Thanos aparece al haber viajado desde el pasado con las partículas de (Quien eligio). Se desarrolla la batalla, todos comienzan a luchar, logran devolver a la vida a los otros vengadores, por lo cual logran detener a Thanos pero la decisión final ha llegado, encuentras dos artículos.
-¿Cuál eliges?
-Guante de Tony
-Martillo de Thor 
-(1)
-Lo tomas y te das cuenta de que tiene las gemas en su lugar, decide.
-¿Quién lo usa?
-Yo mero
-Tony
-Cap
-(1)
-Lo tomas, dudas un poco y antes de que te atrapen chasqueas los dedos, siempre pensando en el amor que le tienes a tu familia.
-Mueres.
-Has salvado al mundo, todos te lo agradecen y te veneran.  (Jugador Gana)
-
-(2,3)
-Se lo das, tratas de advertirle que puede ser mortal pero no le importa, chasque los dedos. Muere.
-Ha salvado al mundo, todos se lo agradecen y lo veneran.
-Con tu ayuda los vengadores salieron victoriosos, pero perdieron a varia gente en el camino al éxito. (Jugador Gana)
-
-(2)
-Para tu sorpresa lo puedes levantar y lo usas como un maestro, mientras todo esto sucede Tony Stark le logra quitar la gemas a Thanos y chasquea los dedos, todos los aliados de Thanos se desvanecen igual que él mismo.
-Han salvado a la tierra
-Con tu ayuda los vengadores salieron victoriosos, pero perdieron a varia gente en el camino al éxito. (Jugador Gana)
-
-
-
-Regreso a la tierra (peor)
-Al regresar a la tierra te das cuenta de todo lo que pasó:
-Se obtuvieron las tres gemas desde New York, también se consiguió el éter desde asgard, no lograron traer la gema del poder desde Morag y Hawk eye no trae la gema del alma ni a War Machine.
-De pronto Thanos aparece al haber viajado desde el pasado con las partículas de (Quien eligió). Se desarrolla la batalla, todos comienzan a luchar, los vengadores no tienen todas las gemas por lo cual no pueden usar el guante para traer a los demás, por lo tanto Thanos y su ejército son mayoría y logran vencer a los vengadores de manera muy fácil.
-
-Aunque te esforzaste, no lograste realizar lo correcto para salvar a la humanidad.
-Mejor suerte la próxima. (Jugador Pierde)
-
-
-
-Regreso a la tierra (Mejor)
-Al regresar a la tierra te das cuenta de todo lo que pasó:
-Se obtuvieron las tres gemas desde New York, también se consiguió el éter desde asgard, la gema del poder está en tus manos pero (Quien eligió) no volvió y Hulk tiene la gema del alma pero no está con Black Widow y él está furioso..
-De pronto Thanos aparece al haber viajado desde el pasado con las partículas de (Quien eligio). Se desarrolla la batalla, todos comienzan a luchar, logran devolver a la vida a los otros vengadores, por lo cual logran detener a Thanos pero la decisión final ha llegado, encuentras dos artículos.
-¿Cuál eliges?
-Guante de Tony
-Martillo de Thor 
-(1)
-Lo tomas y te das cuenta de que tiene las gemas en su lugar, decide.
-¿Quién lo usa?
-Yo mero
-Tony
-Cap
-(1)
-Lo tomas, dudas un poco y antes de que chasquees los dedos aparece el gran Hulk, a su máxima expresión, aprovecha la distracción de tony y toma por la espalda a Thanos, destrozandolo de una manera jamás antes pensada. 
-Todo su ejército es derrotado por los demás vengadores y la normalidad vuelve a la tierra  (Jugador Gana)
-
-
-
-
-(2,3)
-Se lo das, tratas de advertirle que puede ser mortal pero no le importa, antes de que chasquee aparece el gran Hulk, a su máxima expresión, aprovecha la distracción de (el que eligió) y toma por la espalda a Thanos, destrozandolo de una manera jamás antes pensada. 
-
-Ha salvado al mundo, todos se lo agradecen y lo veneran.
-Con tu ayuda los vengadores salieron victoriosos, pero perdieron a varia gente en el camino al éxito. (Jugador Gana)
-
-(2)
-Para tu sorpresa lo puedes levantar y lo usas como un maestro, mientras todo esto sucede Tony Stark le logra quitar la gemas a Thanos, todos parecen estar peleando de la mejor manera en su historia, todo sale como debería de salir y con la ayuda de Hulk y su furia logran derrotar a Thanos sin que se de ni siquiera cuenta. 
-Han salvado a la tierra
-Con tu ayuda los vengadores salieron victoriosos, pero perdieron a varia gente en el camino al éxito. (Jugador Gana)
+----- FIN CAPITULO 2: TIME HEIST -----
