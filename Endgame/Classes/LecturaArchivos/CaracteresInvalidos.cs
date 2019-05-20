@@ -45,7 +45,7 @@ namespace Endgame.Classes.LecturaArchivos
                 }
                 return funciona = true;
             }
-            catch (FileNotFoundException)
+            catch (DirectoryNotFoundException)
             {
                 Console.WriteLine();
                 Console.WriteLine("DIRECCION DE LOS ARCHIVOS NO SON CORRECTOS; ASEGURATE DE QUE LA DIRECCION NO SEA LA DE Users\\mtorr\\source, YA QUE ES LA PROPIA"); Console.ReadKey();

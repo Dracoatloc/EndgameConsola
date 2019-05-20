@@ -40,7 +40,7 @@ namespace Endgame.Classes.Individuos
                 Console.Clear();
                 Console.ForegroundColor = ConsoleColor.White;
             }
-            catch (FileNotFoundException)
+            catch (DirectoryNotFoundException)
             {
                 Console.ForegroundColor = ConsoleColor.White;
                 Console.WriteLine();

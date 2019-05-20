@@ -35,7 +35,7 @@ namespace Endgame.Classes.LecturaArchivos
                     Console.WriteLine("Numero no aceptable. "); Console.ReadKey();
                 }
             }
-            catch (FileNotFoundException)
+            catch (DirectoryNotFoundException)
             {
                 Console.WriteLine();
                 Console.WriteLine("DIRECCION DE LOS ARCHIVOS NO SON CORRECTOS; ASEGURATE DE QUE LA DIRECCION NO SEA LA DE Users\\mtorr\\source, YA QUE ES LA PROPIA"); Console.ReadKey();
